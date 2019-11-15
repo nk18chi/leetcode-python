@@ -12,10 +12,7 @@ def generate(numRows):
     list.append([initial])
 
     for i in range(initial, numRows):
-        child = []
-        for _ in range(0, i + 1):
-            child.append(0)
-        list.append(child)
+        list.append([0] * (i + 1))
 
         j = 0
         for li in list[i - 1]:
