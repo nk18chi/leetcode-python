@@ -3,8 +3,8 @@
 
 
 def main():
-  solution = Solution()
-  print(solution.functionName())
+    solution = Solution()
+    print(solution.functionName())
 
 
 class Solution:
