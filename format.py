@@ -11,7 +11,7 @@ def main():
 
 class Solution:
     def functionName(self, args: str) -> str:
-    return
+        return
 
 
 if __name__ == '__main__':
