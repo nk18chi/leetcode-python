@@ -2,13 +2,13 @@
 # https://leetcode.com/problems/longest-univalue-path/
 
 
-def main():
-  solution = Solution()
-  object_list = [5, 4, 5, 1, 1, 5]
-  object = [TreeNode(l) for l in object_list]
-  print(object)
-  print(treenode)
-  print(solution.longestUnivaluePath(treenode))
+# def main():
+#     solution = Solution()
+#     object_list = [5, 4, 5, 1, 1, 5]
+#     object = [TreeNode(l) for l in object_list]
+#     print(object)
+#     print(treenode)
+#     print(solution.longestUnivaluePath(treenode))
 
 
 # Definition for a binary tree node.
