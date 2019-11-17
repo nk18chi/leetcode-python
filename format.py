@@ -10,11 +10,6 @@ def main():
     print(s.functionName())
 
 
-class Solution:
-    def functionName(self, args: str) -> str:
-        return
-
-
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -44,6 +39,11 @@ def createTreeNode(list):
             break
 
     return tree
+
+
+class Solution:
+    def functionName(self, args: str) -> str:
+        return
 
 
 if __name__ == '__main__':
