@@ -2,12 +2,11 @@
 # url
 
 # from typing import List
+import unittest
 
 
 def main():
-    tree = createTreeNode([5, 5, 5, 1, 1, 5])
-    s = Solution()
-    print(s.functionName())
+    unittest.main()
 
 
 class TreeNode:
@@ -39,6 +38,20 @@ def createTreeNode(list):
             break
 
     return tree
+
+
+class Test(unittest.TestCase):
+
+    def test_maxSubArray(self):
+        test_patterns = [
+            ([-2, -2, -1, -3, 0], 0),
+        ]
+
+        for i, (arg, expected) in enumerate(test_patterns):
+            with self.subTest(test=i):
+                s = Solution()
+                # tree = createTreeNode([5, 5, 5, 1, 1, 5])
+                self.assertEqual(s.functionName(arg), expected)
 
 
 class Solution:
