@@ -2,16 +2,44 @@
 # https://leetcode.com/problems/longest-univalue-path/
 
 
-# def main():
-#     solution = Solution()
-#     object_list = [5, 4, 5, 1, 1, 5]
-#     object = [TreeNode(l) for l in object_list]
-#     print(object)
-#     print(treenode)
-#     print(solution.longestUnivaluePath(treenode))
+def main():
+    tree = createTreeNode([1, 4, 5, 4, 4, 5, 4, 4])
+    s = Solution()
+    print(s.longestUnivaluePath(tree))
 
 
 # Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+    def __str__(self):
+        return f'<{self.val}, {self.left}, {self.right}>'
+
+
+def createTreeNode(list):
+
+    from collections import deque
+
+    data = list
+    n = iter(data)
+    tree = TreeNode(next(n))
+    fringe = deque([tree])
+    while True:
+        head = fringe.popleft()
+        try:
+            head.left = TreeNode(next(n))
+            fringe.append(head.left)
+            head.right = TreeNode(next(n))
+            fringe.append(head.right)
+        except StopIteration:
+            break
+
+    return tree
+
+
 class Solution:
     def longestUnivaluePath(self, root: TreeNode) -> int:
         self.sum = 0
