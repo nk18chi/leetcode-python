@@ -42,7 +42,7 @@ def createTreeNode(list):
 
 class Test(unittest.TestCase):
 
-    def test_maxSubArray(self):
+    def test_functionName(self):
         test_patterns = [
             ([-2, -2, -1, -3, 0], 0),
         ]
