@@ -62,8 +62,8 @@ class Solution:
         # return sum
 
         # second solution
-        lengh = len(s)
-        if lengh == 0:
+        length = len(s)
+        if length == 0:
             return 0
 
         sum = 0
