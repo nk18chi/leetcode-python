@@ -39,27 +39,27 @@ class Solution:
             "M": 1000,
         }
 
-        # first solution
-        lengh = len(s)
-        if lengh == 0:
-            return 0
+        # # first solution
+        # lengh = len(s)
+        # if lengh == 0:
+        #     return 0
 
-        sum = 0
-        compare = 0
-        for i in range(0, len(s)):
-            if s[i] in dict.keys():
-                if compare == 0:
-                    compare = dict[s[i]]
-                elif dict[s[i]] <= compare:
-                    sum += compare
-                else:
-                    sum -= compare
+        # sum = 0
+        # compare = 0
+        # for i in range(0, len(s)):
+        #     if s[i] in dict.keys():
+        #         if compare == 0:
+        #             compare = dict[s[i]]
+        #         elif dict[s[i]] <= compare:
+        #             sum += compare
+        #         else:
+        #             sum -= compare
 
-                compare = dict[s[i]]
+        #         compare = dict[s[i]]
 
-        sum += compare
+        # sum += compare
 
-        return sum
+        # return sum
 
         # second solution
         lengh = len(s)
