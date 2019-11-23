@@ -2,11 +2,6 @@
 # https://leetcode.com/problems/roman-to-integer/
 
 
-def main():
-    s = Solution()
-    print(s.intToRoman(3))
-
-
 class Solution:
     def intToRoman(self, num: int) -> str:
         self.dict = {
@@ -39,7 +34,3 @@ class Solution:
             elif n < v:
                 del self.dict[k]
                 return self.getRoman(n)
-
-
-if __name__ == '__main__':
-    main()
