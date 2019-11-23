@@ -13,11 +13,11 @@ class Test(unittest.TestCase):
             ("[2, 7, 11, 15]", 9, [0, 1]),
         ]
 
-        for i, (arg, expected) in enumerate(test_patterns):
+        for i, (arg, arg2, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
                 s = f.Solution()
                 # tree = createTreeNode([5, 5, 5, 1, 1, 5])
-                self.assertEqual(s.twoSum(arg), expected)
+                self.assertEqual(s.twoSum(arg, arg2), expected)
 
 
 if __name__ == '__main__':
