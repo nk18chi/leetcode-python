@@ -19,15 +19,12 @@ class Solution:
             if target == c:
                 count = count + 1
             else:
-                if count == 1:
-                    chars[index] = c
-                    index = index + 1
-                else:
+                if count != 1:
                     for s in str(count):
                         chars[index] = s
                         index = index + 1
-                    chars[index] = c
-                    index = index + 1
+                chars[index] = c
+                index = index + 1
                 count = 1
             target = c
             num = num + 1
