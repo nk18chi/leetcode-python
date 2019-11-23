@@ -8,7 +8,7 @@ f = importlib.import_module('solutions.format.index')
 
 class Test(unittest.TestCase):
 
-    def test_twoSum(self):
+    def test_functionName(self):
         test_patterns = [
             ([2, 7, 11, 15], 9, [0, 1]),
         ]
