@@ -1,6 +1,3 @@
-# 1. Two Sum
-# https://leetcode.com/problems/two-sum/
-
 import unittest
 import importlib
 f = importlib.import_module('solutions.format.index')
