@@ -34,4 +34,4 @@ class Solution:
 
             if isGreat and isLess:
                 return False
-            return True
+        return True
