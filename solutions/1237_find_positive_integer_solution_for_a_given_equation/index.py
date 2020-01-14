@@ -20,8 +20,8 @@ class Solution:
                      z: int) -> List[List[int]]:
         # first solution
         list = []
-        for i in range(1, 1000):
-            for j in range(1, 1000):
+        for i in range(1, 1001):
+            for j in range(1, 1001):
                 num = customfunction.f(i, j)
                 if num == z:
                     list.append([i, j])
