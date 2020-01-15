@@ -5,7 +5,6 @@ f = importlib.import_module(
 
 
 class Test(unittest.TestCase):
-
     def test_search(self):
         test_patterns = [
             ([7, 8, 1, 2, 3, 4, 5, 6], 2, 3),
