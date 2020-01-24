@@ -6,11 +6,21 @@ from typing import List
 
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        # # first time
+        # dict = {}
+        # for i, n in enumerate(nums):
+        #     if n in dict:
+        #         if abs(i - dict[n]) == k:
+        #             return True
+        #     dict[n] = i
+
+        # return False
+
+        # second time
         dict = {}
         for i, n in enumerate(nums):
             if n in dict:
-                if abs(i - dict[n]) == k:
+                if i - dict[n] <= k:
                     return True
             dict[n] = i
-
         return False
