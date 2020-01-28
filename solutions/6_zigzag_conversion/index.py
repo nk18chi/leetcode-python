@@ -19,9 +19,6 @@ class Solution:
         for c in s:
             res[index] += c
             index = index - 1 if isDiagonal else index + 1
-            if index == numRows - 1:
-                isDiagonal = True
-            if index == 0:
-                isDiagonal = False
-
+            if index == 0 or index == numRows - 1:
+                isDiagonal = not isDiagonal
         return "".join(res)
