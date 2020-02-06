@@ -6,8 +6,7 @@
 
 class Solution:
     def functionName(self) -> str:
-
-        return
+        return ""
 
 
 class TreeNode:
