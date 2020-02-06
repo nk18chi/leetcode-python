@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 
 
 class Solution:
@@ -6,7 +6,7 @@ class Solution:
         if len(nums) % k != 0:
             return False
 
-        dict = {}
+        dict: Dict[int, int] = {}
         for n in nums:
             dict[n] = dict[n] + 1 if n in dict else 1
 
@@ -30,7 +30,7 @@ class Solution:
             maxLetters: int,
             minSize: int,
             maxSize: int) -> int:
-        dict = {}
+        dict: Dict[str, int] = {}
         for num in range(maxSize, minSize - 1, -1):
             for i in range(len(s) - num + 1):
                 t = s[i: i + num]

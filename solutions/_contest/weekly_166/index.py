@@ -1,14 +1,14 @@
 # 733. Flood Fill - Easy
 # https://leetcode.com/problems/flood-fill/
 
-from typing import List
+from typing import List, Dict
 
 
 class Solution:
     def smallestDivisor(self, nums: List[int], threshold: int) -> int:
-        sum = 0
-        target = 1
-        finish = False
+        sum: int = 0
+        target: int = 1
+        finish: bool = False
         while (True):
             for n in nums:
                 import math
@@ -24,7 +24,7 @@ class Solution:
                 return target
 
     def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
-        dict = {}
+        dict: Dict[int, int] = {}
         for g in groupSizes:
             if g in dict:
                 dict[g] += 1
@@ -32,9 +32,9 @@ class Solution:
                 dict[g] = 1
 
         for index, value in dict.items():
-            dict[index] = value / index
+            dict[index] = value // index
 
-        list = []
+        list: List[List[int]] = []
         for index, value in dict.items():
             li = []
             for _ in range(int(value)):
@@ -42,10 +42,10 @@ class Solution:
                 list.append(li)
 
         for i, li in enumerate(list):
-            for k, l in enumerate(li):
+            for k, _l in enumerate(li):
                 id = 0
                 for g in groupSizes:
-                    if l == g:
+                    if _l == g:
                         list[i][k] = id
                         groupSizes[id] = 0
                         break
@@ -54,13 +54,13 @@ class Solution:
         return list
 
     def subtractProductAndSum(self, n: int) -> int:
-        n = str(n)
-        if len(n) < 2:
+        str_n: str = str(n)
+        if len(str_n) < 2:
             return 0
-        sum = int(n[0])
-        multi = int(n[0])
+        sum = int(str_n[0])
+        multi = int(str_n[0])
 
-        for i in n[1:]:
+        for i in str_n[1:]:
             sum += int(i)
             multi *= int(i)
 

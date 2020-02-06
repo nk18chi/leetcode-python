@@ -20,7 +20,7 @@ class Solution:
 
         while (max_length > 0):
             for i in range(0, len_height):
-                sum_list = []
+                sum_list: List[int] = []
                 row_count = 1
                 for m in mat[i:]:
                     list = []

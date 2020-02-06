@@ -73,7 +73,7 @@ class Solution:
             getAllNode(self, node.left)
             getAllNode(self, node.right)
 
-        self.list = []
+        self.list: List[int] = []
         getAllNode(self, root1)
         getAllNode(self, root2)
 
