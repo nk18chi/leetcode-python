@@ -1,6 +1,5 @@
 import unittest
-import importlib
-f = importlib.import_module('solutions.format.index')
+import solutions.format.index as main
 
 
 class Test(unittest.TestCase):
@@ -11,8 +10,8 @@ class Test(unittest.TestCase):
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
-                s = f.Solution()
-                # tree = f.createTreeNode([5, 5, 5, 1, 1, 5])
+                s = main.Solution()
+                # tree = main.createTreeNode([5, 5, 5, 1, 1, 5])
                 self.assertEqual(s.functionName(arg), expected)
 
 
