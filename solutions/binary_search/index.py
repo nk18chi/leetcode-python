@@ -5,7 +5,7 @@ from typing import List
 
 
 class Solution:
-    # helper
+    # with helper
     def search(self, nums: List[int], target: int) -> int:
         def bs(self, list: List[int], start: int, end: int):
             if start > end:
@@ -21,14 +21,14 @@ class Solution:
 
     # # without helper
     # def search(self, nums: List[int], target: int) -> int:
-    #     if len(nums) < 1:
-    #         return -1
-    #     mid: int = len(nums) // 2
-    #     if nums[mid] == target:
-    #         return mid
-    #     if nums[mid] < target:
-    #         val: int = self.search(nums[mid:], target)
-    #         if
-    #         return mid +
-    #     else:
-    #         return self.search(nums[mid:], target)
+    #     left: int = 0
+    #     right: int = len(nums) - 1
+    #     while (left <= right):
+    #         mid: int = (left + right) // 2
+    #         if nums[mid] == target:
+    #             return mid
+    #         if nums[mid] < target:
+    #             left = mid + 1
+    #         else:
+    #             right = mid - 1
+    #     return -1
