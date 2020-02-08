@@ -2,5 +2,9 @@ autopep8==1.4.4
 entrypoints==0.3
 flake8==3.7.9
 mccabe==0.6.1
+mypy==0.761
+mypy-extensions==0.4.3
 pycodestyle==2.5.0
 pyflakes==2.1.1
+typed-ast==1.4.1
+typing-extensions==3.7.4.1
