@@ -1,7 +1,7 @@
 # 62. Unique Paths
 # https://leetcode.com/problems/unique-paths/
 
-from typing import List, Dict
+from typing import List
 
 
 # [
