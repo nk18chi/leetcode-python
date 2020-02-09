@@ -6,9 +6,9 @@ import solutions.unique_paths.index as main
 class Test(unittest.TestCase):
     def test_uniquePaths(self):
         test_patterns = [
-            # (1, 1, 1),
-            # (3, 2, 3),
-            # (7, 3, 28),
+            (1, 1, 1),
+            (7, 3, 28),
+            (3, 2, 3),
             (23, 12, 193536720),
         ]
 
