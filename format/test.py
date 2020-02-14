@@ -12,6 +12,8 @@ class Test(unittest.TestCase):
             with self.subTest(test=i):
                 s = main.Solution()
                 # tree = main.createTreeNode([5, 5, 5, 1, 1, 5])
+                # n = main.createListNode(arg)
+                # self.assertEqual(main.getValFromListNode(s.deleteDuplicates(n)), expected)
                 self.assertEqual(s.functionName(arg), expected)
 
 
