@@ -37,8 +37,6 @@ def createTreeNode(list):
 
 class Solution:
     def findSecondMinimumValue(self, root: TreeNode) -> int:
-        if root is None:
-            return -1
         minList: List[int] = [root.val, -1]
 
         def dfs(root):
@@ -48,7 +46,6 @@ class Solution:
                 return
             if root.val != minList[0]:
                 minList[1] = root.val
-                return
             dfs(root.left)
             dfs(root.right)
         dfs(root)
