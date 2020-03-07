@@ -1,5 +1,5 @@
 import unittest
-import solutions.format.index as main
+import solutions.range_sum_query.index as main
 
 
 class Test(unittest.TestCase):
@@ -11,10 +11,10 @@ class Test(unittest.TestCase):
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
                 s = main.Solution()
-                # tree = main.createTreeNode([5, 5, 5, 1, 1, 5])
-                # n = main.createListNode(arg)
-                # self.assertEqual(main.getValFromListNode(s.deleteDuplicates(n)), expected)
-                self.assertEqual(s.functionName(arg), expected)
+                na = s.NumArray([-2, 0, 3, -5, 2, -1])
+                self.assertEqual(na.sumRange(0, 2), 1)
+                self.assertEqual(na.sumRange(2, 5), -1)
+                self.assertEqual(na.sumRange(0, 5), -3)
 
 
 if __name__ == '__main__':
