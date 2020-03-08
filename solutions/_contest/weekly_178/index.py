@@ -64,5 +64,5 @@ class Solution:
         #     for vote in votes:
         #         if vote[i] in dict:
         #             dict[vote[i]] -= 1001 ** (length - i)
-        res: str = "".join(k for k, v in sorted(dict.items(), key=lambda item: (item[1], item[0]), reverse=(True, False)))
-        # return res
+        # res: str = "".join(k for k, v in sorted(dict.items(), key=lambda item: (item[1], item[0]), reverse=(True, False)))
+        return res
