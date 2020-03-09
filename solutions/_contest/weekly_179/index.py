@@ -117,12 +117,27 @@ class Solution:
         return helper(self, headID, 0)
 
     # def frogPosition(self, n: int, edges: List[List[int]], t: int, target: int) -> float:
-    #     def dfs(self, node: int, probability: List[int], rest: int):
-    #         if rest == 0:
-    #             if node == target:
-    #                 res: int = 0
-    #                 for p in probability:
+    #     node: Dict[int, List[int]] = {}
+    #     for e in edges:
+    #         new: List[int] = node.get(e[0], [])
+    #         new.append(e[1])
+    #         node[e[0]] = new
+
+    #     def dfs(self, n: int, probability: List[int], rest: int) -> float:
+    #         if rest == 0 or n not in node:
+    #             if n == target:
+    #                 if len(probability) == 0:
+    #                     return 1
+    #                 res: float = 1 / probability[0]
+    #                 for p in probability[1:]:
     #                     res *= 1 / p
     #                 return res
     #             else:
     #                 return 0
+    #         probability.append(len(node[n]))
+    #         for num in node[n]:
+    #             val: float = dfs(self, num, probability, rest - 1)
+    #             if val > 0:
+    #                 return val
+    #         return 0
+    #     return dfs(self, 1, [], t)
