@@ -9,6 +9,8 @@ class Test(unittest.TestCase):
         test_patterns = [
             ([2, 0, 6, 6], "06:26"),
             ([1, 2, 3, 4], "23:41"),
+            ([5, 5, 5, 5], ""),
+            ([0, 0, 0, 0], "00:00"),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
