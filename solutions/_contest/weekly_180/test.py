@@ -31,15 +31,15 @@ class Test(unittest.TestCase):
     #             # self.assertEqual(main.getValFromListNode(s.deleteDuplicates(n)), expected)
     #             self.assertEqual(s.balanceBST(tree), expected)
 
-    def test_maxPerformance(self):
-        test_patterns = [
-            (6, [2, 10, 3, 1, 5, 8], [5, 4, 3, 9, 7, 2], 2, 60),
-        ]
+    # def test_maxPerformance(self):
+    #     test_patterns = [
+    #         (6, [2, 10, 3, 1, 5, 8], [5, 4, 3, 9, 7, 2], 2, 60),
+    #     ]
 
-        for i, (arg1, arg2, arg3, arg4, expected) in enumerate(test_patterns):
-            with self.subTest(test=i):
-                s = main.Solution()
-                self.assertEqual(s.maxPerformance(arg1, arg2, arg3, arg4), expected)
+    #     for i, (arg1, arg2, arg3, arg4, expected) in enumerate(test_patterns):
+    #         with self.subTest(test=i):
+    #             s = main.Solution()
+    #             self.assertEqual(s.maxPerformance(arg1, arg2, arg3, arg4), expected)
 
 
 if __name__ == '__main__':
