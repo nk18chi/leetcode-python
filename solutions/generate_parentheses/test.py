@@ -5,8 +5,7 @@ import solutions.generate_parentheses.index as main
 class Test(unittest.TestCase):
     def test_generateParenthesis(self):
         test_patterns = [
-            (4, ['()()()', '(()())', '((()))', '()(())', '(())()']),
-            (3, ['()()()', '(()())', '((()))', '()(())', '(())()']),
+            (3, ['((()))', '(()())', '(())()', '()(())', '()()()']),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
