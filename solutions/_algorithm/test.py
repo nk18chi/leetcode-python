@@ -1,6 +1,6 @@
 import unittest
-import solutions.algorithm.search as search
-import solutions.algorithm.sort as sort
+import solutions._algorithm.search as search
+import solutions._algorithm.sort as sort
 
 
 class Test(unittest.TestCase):
