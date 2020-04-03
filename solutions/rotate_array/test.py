@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.rotate_rrray.index as main
+import solutions.rotate_array.index as main
 
 
 class Test(unittest.TestCase):
