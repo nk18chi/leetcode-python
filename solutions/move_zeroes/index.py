@@ -6,10 +6,8 @@ from typing import List
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
-        left: int = 0
-        right: int = 0
-        while right < len(nums):
-            if nums[right] != 0:
-                nums[right], nums[left] = nums[left], nums[right]
-                left += 1
-            right += 1
+        pointer: int = 0
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[pointer], nums[i] = nums[i], nums[pointer]
+                pointer += 1
