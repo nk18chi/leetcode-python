@@ -6,8 +6,8 @@ class Test(unittest.TestCase):
     def test_groupAnagrams(self):
         test_patterns = [
             (["eat", "tea", "tan", "ate", "nat", "bat"], [
-                ['eat', 'tea', 'ate'],
-                ['tan', 'nat'],
+                ["eat", "tea", "ate"],
+                ["tan", "nat"],
                 ["bat"]
             ]
             ),
