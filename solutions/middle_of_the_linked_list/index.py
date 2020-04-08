@@ -7,7 +7,7 @@ from solutions._class.list_node import ListNode
 class Solution:
     # # loop twice
     # # Time complexity: O(n + n/2) -> O(n)
-    # # Space complexity: O(n)
+    # # Space complexity: O(1)
     # def middleNode(self, head: ListNode) -> ListNode:
     #     length: int = 0
     #     copy: ListNode = head
