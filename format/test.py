@@ -1,5 +1,6 @@
 import unittest
 import solutions.format.index as main
+from solutions._class.list_node import ListNode, createListNode, getValFromListNode
 
 
 class Test(unittest.TestCase):
@@ -12,9 +13,15 @@ class Test(unittest.TestCase):
             with self.subTest(test=i):
                 s = main.Solution()
                 # tree = main.createTreeNode([5, 5, 5, 1, 1, 5])
-                # n = main.createListNode(arg)
-                # self.assertEqual(main.getValFromListNode(s.deleteDuplicates(n)), expected)
                 self.assertEqual(s.functionName(arg), expected)
+
+        # (test) List Node
+        # for i, (arg, expected) in enumerate(test_patterns):
+        #     with self.subTest(test=i):
+        #         s = main.Solution()
+        #         ln = createListNode(arg)
+        #         ans: ListNode = getValFromListNode(s.functionName(ln))
+        #         self.assertEqual(ans, expected)
 
 
 if __name__ == '__main__':
