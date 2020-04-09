@@ -29,7 +29,7 @@ class Test(unittest.TestCase):
     def test_longestDiverseString(self):
         test_patterns = [
             (1, 1, 7, "ccaccbcc"),
-            (2, 2, 1, "aabbc"),
+            (2, 2, 1, "abbac"),
             (7, 1, 0, "aabaa")
         ]
 
