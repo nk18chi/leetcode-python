@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
 
         for i, (arg1, arg2, arg3) in enumerate(test_patterns):
             with self.subTest(test=i):
-                minStack = main.Solution().MinStack()
+                minStack = main.MinStack()
                 minStack.push(-2)
                 minStack.push(0)
                 minStack.push(-3)
