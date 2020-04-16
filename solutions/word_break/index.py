@@ -5,22 +5,14 @@ from typing import List
 
 
 class Solution:
+    # n is the length of "wordDict". m is the length of "s"
+    # Time complexoty: O(n * m^2)
+    # Space complexity: O(m)
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        checked: List[int] = [False for _ in range(len(s))]
-
-        def helper(s: str, wordDict: List[str]) -> bool:
-            if len(s) == 0:
-                return True
-            if checked[len(s) - 1]:
-                return False
-            res: bool = False
-            for word in wordDict:
-                length: int = len(word)
-                if s[:length] == word:
-                    res = helper(s[length:], wordDict)
-                    if res:
-                        return res
-            checked[len(s) - 1] = True
-            return False
-
-        return helper(s, wordDict)
+        dp: List[bool] = [False for _ in range(len(s) + 1)]
+        dp[0] = True
+        for i in range(len(s)):
+            for w in wordDict:
+                if dp[i - len(w) + 1] and s[i - len(w) + 1:i + 1] == w:
+                    dp[i + 1] = True
+        return dp[-1]
