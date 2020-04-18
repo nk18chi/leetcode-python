@@ -2,16 +2,29 @@ from typing import List, Dict, Set, Tuple
 
 
 class Solution:
+    # # witout sorting
+    # # Time complexity: O(n^2*S)
+    # # Space complexity: O(n)
+    # def stringMatching(self, words: List[str]) -> List[str]:
+    #     res: List[str] = []
+    #     for i in range(len(words)):
+    #         for j in range(len(words)):
+    #             if i != j and words[i] in words[j]:
+    #                 res.append(words[i])
+    #                 break
+    #     return res
+
+    # sorting
+    # Time complexity: O(nlogn + n^2*S) -> O(n^2*S)
+    # Space complexity: O(n)
     def stringMatching(self, words: List[str]) -> List[str]:
+        words.sort(key=len)
         res: List[str] = []
-        for _ in range(len(words)):
-            target = words[0]
-            del words[0]
-            for word in words:
-                if target in word:
-                    res.append(target)
+        for i in range(len(words)):
+            for j in range(i + 1, len(words)):
+                if words[i] in words[j]:
+                    res.append(words[i])
                     break
-            words.append(target)
         return res
 
     def processQueries(self, queries: List[int], m: int) -> List[int]:
