@@ -6,11 +6,11 @@ import solutions.greatest_common_divisor_of_strings.index as main
 class Test(unittest.TestCase):
     def test_gcdOfStrings(self):
         test_patterns = [
+            ("TAUXXTAUXXTAUXXTAUXXTAUXX",
+             "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXX"),
             ("ABCABC", "ABC", "ABC"),
             ("ABABAB", "ABAB", "AB"),
             ("LEET", "CODE", ""),
-            ("TAUXXTAUXXTAUXXTAUXXTAUXX",
-             "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXX"),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
