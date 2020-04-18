@@ -5,6 +5,8 @@ from typing import List
 
 
 class Solution:
+    # Time complexity: O(n*m)
+    # Space complexity: O(n*m)
     def numIslands(self, grid: List[List[str]]) -> int:
         res: int = 0
 
