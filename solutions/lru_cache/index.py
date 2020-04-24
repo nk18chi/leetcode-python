@@ -15,7 +15,8 @@ class Solution:
         # Space complexity: O(n)
         def get(self, key: int) -> int:
             if key in self.cache:
-                self.stack.remove
+                self.stack.remove(key)
+                self.stack.append(key)
                 return self.cache[key]
             else:
                 return -1
