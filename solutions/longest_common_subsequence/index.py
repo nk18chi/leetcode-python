@@ -5,6 +5,8 @@ from typing import List
 
 
 class Solution:
+    # Time complexity: O(n*m)
+    # Space complexity: O(n*m)
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         dp: List[List[int]] = [[0 for _ in range(len(text1) + 1)] for _ in range(len(text2) + 1)]
         for i in range(1, len(text2) + 1):
