@@ -6,6 +6,8 @@ from solutions._class.tree_node import TreeNode
 
 
 class Solution:
+    # Time complexity: O(n)
+    # Space complexity: O(n)
     def isValidSequence(self, root: TreeNode, arr: List[int]) -> bool:
         def dfs(root: TreeNode, index: int) -> bool:
             if not root or len(arr) <= index or root.val != arr[index]:
