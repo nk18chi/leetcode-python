@@ -34,8 +34,8 @@ class Solution:
             _min = nums[i]
             for j in range(i + 1, len(nums)):
                 _max = max(_max, nums[j])
-                _max = min(_min, nums[j])
-                if abs(nums[i] - nums[j]) > limit:
+                _min = min(_min, nums[j])
+                if abs(_max - _min) > limit:
                     break
                 else:
                     res = max(res, j - i + 1)
