@@ -1,20 +1,22 @@
 # 402. Remove K Digits
 # https://leetcode.com/problems/remove-k-digits/
 
-# from typing import List, Dict
+from typing import List
 
 
 class Solution:
+    # Time complexity: O(n)
+    # Space complexity: O(n)
     def removeKdigits(self, num: str, k: int) -> str:
-        self.res: float = float("inf")
-
-        def helper(num: str, k: int, cur: str):
-            if k == 0:
-                self.res = min(self.res, int(cur + num))
-                return
-            if len(num) < k:
-                return
-            helper(num[1:], k - 1, cur)
-            helper(num[1:], k, cur + num[0])
-        helper(num, k, "0")
-        return str(self.res)
+        if len(num) == 0:
+            return "0"
+        stack: List[str] = [num[0]]
+        for n in num[1:]:
+            while k > 0 and stack and n < stack[-1]:
+                stack.pop()
+                k -= 1
+            stack.append(n)
+        while k > 0 and stack:
+            stack.pop()
+            k -= 1
+        return "".join(stack).lstrip("0") or "0"
