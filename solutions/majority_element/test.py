@@ -5,7 +5,7 @@ import solutions.majority_element.index as main
 class Test(unittest.TestCase):
     def test_majorityElement(self):
         test_patterns = [
-            ([2, 7, 11, 15], 0),
+            ([2, 2, 1, 1, 1, 2, 2], 2),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
