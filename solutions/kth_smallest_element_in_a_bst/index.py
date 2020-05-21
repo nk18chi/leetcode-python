@@ -6,7 +6,7 @@ from solutions._class.tree_node import TreeNode
 
 class Solution:
     # Time complexity: O(n)
-    # Space complexity: O(1)
+    # Space complexity: O(n)
     def kthSmallest(self, root: TreeNode, k: int) -> int:
 
         self.res: int = 0
