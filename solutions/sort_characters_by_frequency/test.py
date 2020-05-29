@@ -5,7 +5,7 @@ import solutions.sort_characters_by_frequency.index as main
 class Test(unittest.TestCase):
     def test_frequencySort(self):
         test_patterns = [
-            ("tree", "eert"),
+            ("tree", "eetr"),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
