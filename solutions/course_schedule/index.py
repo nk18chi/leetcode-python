@@ -5,6 +5,8 @@ from typing import List
 
 
 class Solution:
+    # Time complexity: O(n + e)
+    # Space complexity: O(n + e)
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         graph: List[List[int]] = [[] for _ in range(numCourses)]
         indegree: List[int] = [0] * numCourses
