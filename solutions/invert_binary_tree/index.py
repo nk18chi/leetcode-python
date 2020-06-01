@@ -5,6 +5,8 @@ from solutions._class.tree_node import TreeNode
 
 
 class Solution:
+    # Time complexity: O(n)
+    # Space complexity: O(n)
     def invertTree(self, root: TreeNode) -> TreeNode:
         if root is None:
             return
