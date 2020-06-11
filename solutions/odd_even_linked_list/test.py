@@ -1,6 +1,6 @@
 import unittest
 import solutions.odd_even_linked_list.index as main
-from solutions._class.list_node import ListNode, createListNode, getValFromListNode
+from solutions._class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):
@@ -13,7 +13,7 @@ class Test(unittest.TestCase):
             with self.subTest(test=i):
                 s = main.Solution()
                 ln = createListNode(arg)
-                ans: ListNode = getValFromListNode(s.oddEvenList(ln))
+                ans: ListNode = getListNode(s.oddEvenList(ln))
                 self.assertEqual(ans, expected)
 
 
