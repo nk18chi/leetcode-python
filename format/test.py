@@ -1,7 +1,7 @@
 import unittest
 import solutions.format.index as main
 from solutions._class.tree_node import TreeNode, createTreeNode, getTreeNode
-from solutions._class.list_node import ListNode, createListNode, getValFromListNode
+from solutions._class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):

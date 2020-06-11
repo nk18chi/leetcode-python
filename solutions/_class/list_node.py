@@ -24,7 +24,7 @@ def createListNode(list):
     return node
 
 
-def getValFromListNode(node: ListNode):
+def getListNode(node: ListNode):
     res: List[int] = []
     while node:
         res.append(node.val)
