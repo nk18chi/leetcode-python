@@ -5,6 +5,8 @@ from typing import List, Set
 
 
 class Solution:
+    # Time complexity: O(n)
+    # Space complexity: O(1)
     def validIPAddress(self, IP: str) -> str:
         def isIPv4(s: str):
             print(s)
