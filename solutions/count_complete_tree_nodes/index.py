@@ -5,6 +5,8 @@ from solutions._class.tree_node import TreeNode
 
 
 class Solution:
+    # Time complexity: O(logn * logn)
+    # Space complexity: O(logn)
     def countNodes(self, root: TreeNode) -> int:
         if not root:
             return 0
