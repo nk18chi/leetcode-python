@@ -5,6 +5,8 @@ from typing import List
 
 
 class Solution:
+    # Time complexity: O(n)
+    # Space complexity: O(1)
     def findDuplicate(self, nums: List[int]) -> int:
         slow: int = nums[0]
         fast: int = nums[nums[0]]
