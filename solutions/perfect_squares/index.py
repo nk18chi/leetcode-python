@@ -18,7 +18,7 @@ class Solution:
                 j += 1
             res: float = float("inf")
             for c in choices:
-                res = min(res, dp[i - c])
+                res = min(res, 1 + dp[i - c])
             dp[i] = int(res)
             i += 1
         return dp[-1]
