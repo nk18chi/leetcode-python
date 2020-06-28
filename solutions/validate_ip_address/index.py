@@ -9,7 +9,6 @@ class Solution:
     # Space complexity: O(1)
     def validIPAddress(self, IP: str) -> str:
         def isIPv4(s: str):
-            print(s)
             if not s.isdigit():  # 11.11.1.a
                 return False
             elif str(int(s)) != s:  # 11.11.1.01
