@@ -1,5 +1,8 @@
-# leetcode
+# LeetCode Solutions in Python(3.7)
 
-programing language
+- Solved by an effective way for Time and Space complexity
+- Tested by UnitTest
 
-- Python(3.7)
+# Test
+
+[Run tests by VSCode](https://code.visualstudio.com/docs/python/testing#_run-tests)
