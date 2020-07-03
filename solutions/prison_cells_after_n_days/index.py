@@ -10,7 +10,7 @@ class Solution:
     # we might reduce both complexity if there is loop
     def prisonAfterNDays(self, cells: List[int], N: int) -> List[int]:
         new: List[int] = [0] + cells[1:-1] + [0]
-        seen: Dict[str: int] = {}
+        seen: Dict[str, int] = {}
         while N:
             for i in range(1, len(cells) - 1):
                 total = cells[i - 1] + cells[i + 1]
