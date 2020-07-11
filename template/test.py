@@ -1,7 +1,8 @@
 import unittest
 import solutions.format.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode, getTreeNode
-from solutions._class.list_node import ListNode, createListNode, getListNode
+# from solutions._class.tree_node import TreeNode, createTreeNode, getTreeNode
+# from solutions._class.list_node import ListNode, createListNode, getListNode
+# from solutions._class.node import Node, createDoublyNode, getFlattenDoublyNode
 
 
 class Test(unittest.TestCase):
@@ -14,6 +15,7 @@ class Test(unittest.TestCase):
             with self.subTest(test=i):
                 s = main.Solution()
                 # tree: TreeNode = createTreeNode(arg)
+                # node: Node = createDoublyNode(arg)
                 self.assertEqual(s.functionName(arg), expected)
 
         # (test) List Node
