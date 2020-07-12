@@ -1,8 +1,30 @@
 from typing import List, Set, Dict, Tuple, Deque
-from collections import deque
+from collections import deque, defaultdict
 
 
 class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        indexMap: Dict[int, List[int]] = defaultdict(list)
+        for i in range(len(nums)):
+            indexMap[nums[i]].append(i)
+        res: int = 0
+        for v in indexMap.values():
+            if len(v) == 1:
+                continue
+            res += len(v) * (len(v) - 1) // 2
+        return res
+
+    def numSub(self, s: str) -> int:
+        res: int = 0
+        count: int = 0
+        for c in s:
+            if c == "0":
+                count = 0
+                continue
+            count += 1
+            res += count
+        return res % (10**9 + 7)
+
     def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
         res: List[float] = [0 for _ in range(n)]
         graph: Dict[int, List[Tuple[int, float]]] = {}
