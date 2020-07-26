@@ -6,8 +6,7 @@ from solutions._class.tree_node import TreeNode, createTreeNode
 class Test(unittest.TestCase):
     def test_zigzagLevelOrder(self):
         test_patterns = [
-            ([3, 9, 20, 10, 2, 15, 7], [[3], [20, 9], [15, 7, 10, 2]]),
-            ([3, 9, 20, None, None, 15, 7], [[3], [20, 9], [15, 7]]),
+            ([3, 9, 20, 10, 2, 15, 7], [[3], [20, 9], [10, 2, 15, 7]]),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
