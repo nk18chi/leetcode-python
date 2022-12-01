@@ -8,5 +8,7 @@
 
 
 class Solution:
+    # Time complexity: O()
+    # Space complexity: O()
     def functionName(self) -> str:
         return ""
