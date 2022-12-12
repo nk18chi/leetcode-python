@@ -105,7 +105,6 @@ class Solution:
             root.right = helper(list[mid + 1:], TreeNode(None))
             return root
         res = helper(array, res)
-        print("a")
 
         return res
 

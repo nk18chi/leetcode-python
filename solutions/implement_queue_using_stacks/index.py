@@ -44,6 +44,3 @@ if __name__ == "__main__":
     param_2 = obj.peek()
     param_3 = obj.pop()
     param_4 = obj.empty()
-    print(param_2)
-    print(param_3)
-    print(param_4)

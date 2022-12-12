@@ -6,10 +6,10 @@ from typing import List
 
 def main():
     solution = Solution()
-    print(solution.generate(0))
-    print(solution.generate(1))
-    print(solution.generate(5))
-    print(solution.generate(10))
+    # print(solution.generate(0))
+    # print(solution.generate(1))
+    # print(solution.generate(5))
+    # print(solution.generate(10))
 
 
 class Solution:

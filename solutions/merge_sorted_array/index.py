@@ -24,8 +24,6 @@ class Solution:
         for i, a in enumerate(ans):
             nums1[i] = a
 
-        print(nums1)
-
 
 if __name__ == "__main__":
     s = Solution()

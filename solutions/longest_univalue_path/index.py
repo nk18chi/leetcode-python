@@ -5,7 +5,6 @@
 def main():
     tree = createTreeNode([1, 4, 5, 4, 4, 5, 4, 4])
     s = Solution()
-    print(s.longestUnivaluePath(tree))
 
 
 # Definition for a binary tree node.

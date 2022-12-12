@@ -39,9 +39,9 @@ class Test(unittest.TestCase):
         t.recordTweet("tweet3", 60)
         t.recordTweet("tweet3", 10)
         t.recordTweet("tweet3", 120)
-        print(t.getTweetCountsPerFrequency("hour", "tweet3", 0, 210))
-        print(t.getTweetCountsPerFrequency("minute", "tweet3", 0, 60))
-        print(t.getTweetCountsPerFrequency("minute", "tweet3", 0, 59))
+        # print(t.getTweetCountsPerFrequency("hour", "tweet3", 0, 210))
+        # print(t.getTweetCountsPerFrequency("minute", "tweet3", 0, 60))
+        # print(t.getTweetCountsPerFrequency("minute", "tweet3", 0, 59))
 
         # t.recordTweet("tweet3", 0)
         # t.recordTweet("tweet3", 60)
