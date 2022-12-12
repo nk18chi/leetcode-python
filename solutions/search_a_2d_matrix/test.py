@@ -7,7 +7,7 @@ class Test(unittest.TestCase):
         test_patterns = [
             ([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 3, True),
             ([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 13, False),
-            ([[1]], 1, False),
+            ([[1]], 1, True),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
