@@ -1,30 +1,42 @@
 import unittest
 import solutions.valid_sudoku.index as main
-# from solutions._class.tree_node import TreeNode, createTreeNode, getTreeNode
-# from solutions._class.list_node import ListNode, createListNode, getListNode
-# from solutions._class.node import Node, createDoublyNode, getFlattenDoublyNode
 
 
 class Test(unittest.TestCase):
-    def test_functionName(self):
+    def test_isValidSudoku(self):
         test_patterns = [
-            ([2, 7, 11, 15], 9),
+            (
+                [
+                    ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+                    ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+                    [".", "9", "8", ".", ".", ".", ".", "6", "."],
+                    ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+                    ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+                    ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+                    [".", "6", ".", ".", ".", ".", "2", "8", "."],
+                    [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+                    [".", ".", ".", ".", "8", ".", ".", "7", "9"]
+                ], True
+            ),
+            (
+                [
+                    ["8", "3", ".", ".", "7", ".", ".", ".", "."],
+                    ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+                    [".", "9", "8", ".", ".", ".", ".", "6", "."],
+                    ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+                    ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+                    ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+                    [".", "6", ".", ".", ".", ".", "2", "8", "."],
+                    [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+                    [".", ".", ".", ".", "8", ".", ".", "7", "9"],
+                ], False
+            ),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
                 s = main.Solution()
-                # tree: TreeNode = createTreeNode(arg)
-                # node: Node = createDoublyNode(arg)
-                self.assertEqual(s.functionName(arg), expected)
-
-        # (test) List Node
-        # for i, (arg, expected) in enumerate(test_patterns):
-        #     with self.subTest(test=i):
-        #         s = main.Solution()
-        #         ln = createListNode(arg)
-        #         ans: ListNode = getValFromListNode(s.functionName(ln))
-        #         self.assertEqual(ans, expected)
+                self.assertEqual(s.isValidSudoku(arg), expected)
 
 
 if __name__ == '__main__':
