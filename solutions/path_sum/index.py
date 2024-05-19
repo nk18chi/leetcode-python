@@ -11,7 +11,7 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 class Solution:
@@ -24,9 +24,7 @@ class Solution:
                 return True
 
             sum -= root.val
-            return self.hasPathSum(
-                root.left, sum) or self.hasPathSum(
-                root.right, sum)
+            return self.hasPathSum(root.left, sum) or self.hasPathSum(root.right, sum)
 
     # # first solution
     # def hasPathSum(self, root: TreeNode, sum: int) -> bool:
@@ -56,7 +54,6 @@ class Solution:
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list

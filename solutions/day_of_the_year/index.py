@@ -18,10 +18,10 @@ class Solution:
             9: 30,
             10: 31,
             11: 30,
-            12: 31
+            12: 31,
         }
 
-        Y, M, D = map(int, date.split('-'))
+        Y, M, D = map(int, date.split("-"))
 
         if Y % 4 == 0 and Y % 100 != 0:
             month_days[2] += 1

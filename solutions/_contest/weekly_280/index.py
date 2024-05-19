@@ -32,8 +32,10 @@ class Solution:
         secondTop = sorted(second.items(), key=lambda x: x[1], reverse=True)
         secondTop.append((0, 0))
         _max: int
-        if (firstTop[0][0] == secondTop[0][0]):
-            _max = max(firstTop[0][1] + secondTop[1][1], firstTop[1][1] + secondTop[0][1])
+        if firstTop[0][0] == secondTop[0][0]:
+            _max = max(
+                firstTop[0][1] + secondTop[1][1], firstTop[1][1] + secondTop[0][1]
+            )
         else:
             _max = firstTop[0][1] + secondTop[0][1]
         return len(nums) - _max

@@ -22,7 +22,7 @@ class Solution:
         for n in nums:
             countMap[n] = countMap.get(n, 0) + 1
         heap: List[Tuple[int, int]] = []
-        for (key, value) in countMap.items():
+        for key, value in countMap.items():
             heapq.heappush(heap, (value, key))
             if len(heap) > k:
                 heapq.heappop(heap)

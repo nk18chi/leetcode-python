@@ -9,11 +9,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -34,7 +33,9 @@ def createTreeNode(list):
 
 
 class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+    def lowestCommonAncestor(
+        self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
+    ) -> "TreeNode":
         if root is None:
             return None
         if root.val > p.val and root.val > q.val:

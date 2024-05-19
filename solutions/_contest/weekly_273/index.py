@@ -13,18 +13,18 @@ class Solution:
             count: int = 0
             pos: List[int] = [startPos[0], startPos[1]]
             for j in range(len(s[i:])):
-                if (s[i:][j] == "R"):
+                if s[i:][j] == "R":
                     pos[1] += 1
-                elif(s[i:][j] == "L"):
+                elif s[i:][j] == "L":
                     pos[1] -= 1
-                elif (s[i:][j] == "D"):
+                elif s[i:][j] == "D":
                     pos[0] += 1
-                elif(s[i:][j] == "U"):
+                elif s[i:][j] == "U":
                     pos[0] -= 1
 
-                if (pos[0] < 0 or n <= pos[0]):
+                if pos[0] < 0 or n <= pos[0]:
                     break
-                elif (pos[1] < 0 or n <= pos[1]):
+                elif pos[1] < 0 or n <= pos[1]:
                     break
                 else:
                     count += 1

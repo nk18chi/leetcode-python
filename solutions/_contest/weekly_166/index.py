@@ -9,9 +9,10 @@ class Solution:
         sum: int = 0
         target: int = 1
         finish: bool = False
-        while (True):
+        while True:
             for n in nums:
                 import math
+
                 sum += math.ceil(n / target)
                 if sum > threshold:
                     target += 1

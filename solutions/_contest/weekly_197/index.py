@@ -25,7 +25,14 @@ class Solution:
             res += count
         return res % (10**9 + 7)
 
-    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
+    def maxProbability(
+        self,
+        n: int,
+        edges: List[List[int]],
+        succProb: List[float],
+        start: int,
+        end: int,
+    ) -> float:
         res: List[float] = [0 for _ in range(n)]
         graph: Dict[int, List[Tuple[int, float]]] = {}
         for i in range(len(edges)):

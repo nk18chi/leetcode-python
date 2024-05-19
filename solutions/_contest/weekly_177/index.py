@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -36,15 +35,26 @@ class Solution:
     def daysBetweenDates(self, date1: str, date2: str) -> int:
         import datetime
         import math
-        timestamp1 = int(datetime.datetime(int(date1[0:4]), int(date1[5:7]), int(date1[8:10])).strftime('%s'))
-        timestamp2 = int(datetime.datetime(int(date2[0:4]), int(date2[5:7]), int(date2[8:10])).strftime('%s'))
+
+        timestamp1 = int(
+            datetime.datetime(
+                int(date1[0:4]), int(date1[5:7]), int(date1[8:10])
+            ).strftime("%s")
+        )
+        timestamp2 = int(
+            datetime.datetime(
+                int(date2[0:4]), int(date2[5:7]), int(date2[8:10])
+            ).strftime("%s")
+        )
         if timestamp1 < timestamp2:
             timestamp1, timestamp2 = timestamp2, timestamp1
         diff = (timestamp1 - timestamp2) / (60 * 60 * 24)
 
         return math.floor(abs(diff))
 
-    def validateBinaryTreeNodes(self, n: int, leftChild: List[int], rightChild: List[int]) -> bool:
+    def validateBinaryTreeNodes(
+        self, n: int, leftChild: List[int], rightChild: List[int]
+    ) -> bool:
         def dfs(self, target: int):
             if not self.res:
                 return
@@ -68,6 +78,7 @@ class Solution:
     def closestDivisors(self, num: int) -> List[int]:
         def helper(self, n) -> List[int]:
             import math
+
             for i in range(math.floor(math.sqrt(n)), -1, -1):
                 if n % i == 0:
                     return [n // i, i]

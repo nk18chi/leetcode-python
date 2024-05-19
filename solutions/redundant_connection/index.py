@@ -7,6 +7,7 @@ from typing import List, Dict
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         import collections
+
         graph = collections.defaultdict(set)
 
         def dfs(source, target):

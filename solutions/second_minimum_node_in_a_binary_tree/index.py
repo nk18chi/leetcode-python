@@ -11,11 +11,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -48,5 +47,6 @@ class Solution:
                 minList[1] = root.val
             dfs(root.left)
             dfs(root.right)
+
         dfs(root)
         return minList[1]

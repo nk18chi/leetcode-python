@@ -10,7 +10,7 @@ class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         pChar: List[int] = [0 for _ in range(26)]
         sChar: List[int] = [0 for _ in range(26)]
-        for (pc, sc) in zip(p, s):
+        for pc, sc in zip(p, s):
             pChar[ord(pc) - 97] += 1
             sChar[ord(sc) - 97] += 1
         res: List[int] = []

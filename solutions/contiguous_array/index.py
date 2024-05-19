@@ -12,7 +12,7 @@ class Solution:
         count: int = 0
         maxLength: int = 0
         for i, n in enumerate(nums):
-            count += 1 if n == 1 else - 1
+            count += 1 if n == 1 else -1
             if count in indexMap:
                 maxLength = max(maxLength, i - indexMap[count])
             else:

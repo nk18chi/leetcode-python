@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -51,7 +50,7 @@ class Solution:
         for a in votes:
             for i, v in enumerate(a):
                 count[v][i] -= 1
-        res = ''.join(sorted(votes[0], key=lambda v: count[v] + [v]))
+        res = "".join(sorted(votes[0], key=lambda v: count[v] + [v]))
 
         # if len(votes) < 2 or len(votes[0]) < 2:
         #     return votes[0]

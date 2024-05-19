@@ -20,4 +20,4 @@ class Solution:
             if index[1] - index[0] < right - left - 1:
                 index[0] = left + 1
                 index[1] = right
-        return s[index[0]:index[1]]
+        return s[index[0] : index[1]]

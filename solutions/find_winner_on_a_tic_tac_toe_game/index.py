@@ -7,7 +7,6 @@ import copy
 
 class Solution:
     def tictactoe(self, moves: List[List[int]]) -> str:
-
         pattern_a = [
             [[0, 0], [1, 0], [2, 0]],
             [[0, 1], [1, 1], [2, 1]],
@@ -16,7 +15,7 @@ class Solution:
             [[1, 0], [1, 1], [1, 2]],
             [[2, 0], [2, 1], [2, 2]],
             [[0, 0], [1, 1], [2, 2]],
-            [[0, 2], [1, 1], [2, 0]]
+            [[0, 2], [1, 1], [2, 0]],
         ]
 
         pattern_b = copy.deepcopy(pattern_a)

@@ -4,7 +4,7 @@ from typing import List, Dict
 class Solution:
     def minimumDifference(self, nums: List[int], k: int) -> int:
         sortedNums: List[int] = sorted(nums)
-        res: float = float('inf')
+        res: float = float("inf")
         for i in range(len(sortedNums) - k + 1):
             diff = sortedNums[i + k - 1] - sortedNums[i]
             res = min(diff, res)
@@ -33,5 +33,6 @@ class Solution:
             self.sessions.append(tasks[index])
             dfs(index + 1)
             self.sessions.pop()
+
         dfs(0)
         return self.ans

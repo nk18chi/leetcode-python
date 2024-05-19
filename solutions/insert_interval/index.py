@@ -7,7 +7,9 @@ from typing import List
 class Solution:
     # Time complexity: O(N)
     # Space complexity: O(1)
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(
+        self, intervals: List[List[int]], newInterval: List[int]
+    ) -> List[List[int]]:
         res: List[List[int]] = []
         start: int = newInterval[0]
         end: int = newInterval[1]
@@ -22,5 +24,5 @@ class Solution:
                 start = min(start, intervals[i][0])
                 end = max(end, intervals[i][1])
         res.append([start, end])
-        res += intervals[i + 1:]
+        res += intervals[i + 1 :]
         return res

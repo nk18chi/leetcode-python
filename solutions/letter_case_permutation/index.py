@@ -9,7 +9,7 @@ from typing import List
 
 class Solution:
     def letterCasePermutation(self, S: str) -> List[str]:
-        res = ['']
+        res = [""]
         for s in S:
             if s.isdecimal():
                 for i in range(len(res)):

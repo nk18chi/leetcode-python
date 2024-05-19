@@ -5,7 +5,6 @@ from typing import List
 
 
 class Solution:
-
     def validMountainArray(self, A: List[int]) -> bool:
         length = len(A)
         if length < 3:
@@ -27,6 +26,7 @@ class Solution:
             return False
 
         return True
+
 
 # class Solution:
 #     def validMountainArray(self, A: List[int]) -> bool:

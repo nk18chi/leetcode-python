@@ -8,7 +8,9 @@ class Solution:
     # Time complexit: (mn)
     # Space complexit: (mn)
     def maxUncrossedLines(self, A: List[int], B: List[int]) -> int:
-        dp: List[List[int]] = [[0 for _ in range(len(B) + 1)] for _ in range(len(A) + 1)]
+        dp: List[List[int]] = [
+            [0 for _ in range(len(B) + 1)] for _ in range(len(A) + 1)
+        ]
         for i in range(len(A)):
             for j in range(len(B)):
                 dp[i + 1][j + 1] = 1 if A[i] == B[j] else 0

@@ -10,7 +10,7 @@ class Node:
         self.neighbors = neighbors if neighbors else []
 
     def __str__(self):
-        return f'<{self.val}, {self.prev}, {self.next}, {self.child}>'
+        return f"<{self.val}, {self.prev}, {self.next}, {self.child}>"
 
 
 def createDoublyNode(nums):

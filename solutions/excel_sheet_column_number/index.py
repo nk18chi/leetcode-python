@@ -1,6 +1,7 @@
 # 171. Excel Sheet Column Number
 # https://leetcode.com/problems/excel-sheet-column-number/
 
+
 class Solution:
     # Time Complexity: O(n)
     # Space Complexity: O(1)

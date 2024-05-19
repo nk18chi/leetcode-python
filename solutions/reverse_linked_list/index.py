@@ -12,6 +12,7 @@ class ListNode:
 
 def createListNode(list):
     from collections import deque
+
     data = list
     n = iter(data)
     node = ListNode(next(n))
@@ -46,6 +47,7 @@ class Solution:
             dfs(self, node.next)
             self.cur.next = ListNode(node.val)
             self.cur = self.cur.next
+
         dfs(self, head)
 
         return res.next

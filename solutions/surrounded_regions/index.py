@@ -15,7 +15,12 @@ class Solution:
                 return True
             board[r][c] = "△"
             flips.append((r, c))
-            return dfs(r - 1, c, flips) and dfs(r + 1, c, flips) and dfs(r, c - 1, flips) and dfs(r, c + 1, flips)
+            return (
+                dfs(r - 1, c, flips)
+                and dfs(r + 1, c, flips)
+                and dfs(r, c - 1, flips)
+                and dfs(r, c + 1, flips)
+            )
 
         for i in range(len(board)):
             for j in range(len(board[i])):

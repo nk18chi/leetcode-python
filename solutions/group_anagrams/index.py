@@ -3,6 +3,7 @@
 
 from typing import List, Dict
 
+
 class Solution:
     # O(n * mLogm) in time, O(n * m) in space.
     # n is the number of strings in a given arr(strs).

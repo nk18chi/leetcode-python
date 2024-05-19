@@ -3,9 +3,11 @@ import math
 
 
 class Solution:
-    def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
+    def busyStudent(
+        self, startTime: List[int], endTime: List[int], queryTime: int
+    ) -> int:
         res: int = 0
-        for (s, e) in zip(startTime, endTime):
+        for s, e in zip(startTime, endTime):
             if s <= queryTime <= e:
                 res += 1
         return res
@@ -52,15 +54,18 @@ class Solution:
             if q > r * 2:
                 return
             x3, y3 = (x1 + x2) / 2, (y1 + y2) / 2
-            d = math.sqrt(r ** 2 - (q / 2) ** 2)
+            d = math.sqrt(r**2 - (q / 2) ** 2)
             self.centers.append([x3 - d * dy / q, y3 + d * dx / q])
             self.centers.append([x3 + d * dy / q, y3 - d * dx / q])
+
         for i in range(len(points)):
             for j in range(i + 1, len(points)):
                 setCenter(points[i], points[j])
         for c in self.centers:
             count: int = 0
             for p in points:
-                count += 1 if (p[0] - c[0]) ** 2 + (p[1] - c[1]) ** 2 <= r ** 2 + 10 ** -6 else 0
+                count += (
+                    1 if (p[0] - c[0]) ** 2 + (p[1] - c[1]) ** 2 <= r**2 + 10**-6 else 0
+                )
             res = max(res, count)
         return res

@@ -9,7 +9,7 @@ class Solution:
     # Space complexity: O(N)
     def evalRPN(self, tokens: List[str]) -> int:
         stack: List[int] = []
-        operators: List[str] = ['+', '-', '*', '/']
+        operators: List[str] = ["+", "-", "*", "/"]
         for token in tokens:
             if token in operators:
                 n1: int = stack.pop()

@@ -13,7 +13,9 @@ class Solution:
         countMap: Dict[str, int] = {}
         for c in s:
             countMap[c] = countMap.get(c, 0) + 1
-        sortedMap: List[Tuple[str, int]] = sorted(countMap.items(), key=lambda x: x[1], reverse=True)
+        sortedMap: List[Tuple[str, int]] = sorted(
+            countMap.items(), key=lambda x: x[1], reverse=True
+        )
         return "".join(map(lambda x: x[0] * x[1], sortedMap))
 
     # # heap solution

@@ -10,7 +10,7 @@ class Solution:
     # Space complexity: O(N)
     def coinChange(self, coins: List[int], amount: int) -> int:
         count: int = 0
-        dp: List[float] = [float('inf') for _ in range(amount + 1)]
+        dp: List[float] = [float("inf") for _ in range(amount + 1)]
         dp[0] = 0
         while count < amount:
             count += 1

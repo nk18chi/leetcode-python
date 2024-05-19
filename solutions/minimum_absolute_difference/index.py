@@ -21,7 +21,7 @@ class Solution:
     # second solution
     def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
         arr.sort()
-        _min = float('inf')
+        _min = float("inf")
         res = []
         for i in range(len(arr) - 1):
             abs = arr[i + 1] - arr[i]

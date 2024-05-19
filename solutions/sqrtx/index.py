@@ -1,6 +1,7 @@
 # 69. Sqrt(x)
 # https://leetcode.com/problems/sqrtx/
 
+
 class Solution:
     # Time complexity: O(log n)
     # Space complexity: O(1)

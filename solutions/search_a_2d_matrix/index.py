@@ -18,7 +18,7 @@ class Solution:
             else:
                 right = mid - 1
         targetRow = left - 1
-        if(targetRow < 0):
+        if targetRow < 0:
             return False
         left = 0
         right = len(matrix[targetRow]) - 1

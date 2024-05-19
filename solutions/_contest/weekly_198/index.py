@@ -31,5 +31,6 @@ class Solution:
             dic[labels[n]] = dic.get(labels[n], 0) + 1
             res[n] = dic[labels[n]]
             return dic
+
         dfs(0, {}, set())
         return res

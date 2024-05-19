@@ -28,7 +28,7 @@ class Solution:
             self.cur: int = 0
 
         def visit(self, url: str) -> None:
-            self.q = self.q[:self.cur + 1]
+            self.q = self.q[: self.cur + 1]
             self.q.append(url)
             self.cur += 1
 

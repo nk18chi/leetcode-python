@@ -15,9 +15,7 @@ from typing import List
 
 
 class Solution:
-    def findSolution(self,
-                     customfunction,
-                     z: int) -> List[List[int]]:
+    def findSolution(self, customfunction, z: int) -> List[List[int]]:
         # first solution
         list = []
         for i in range(1, 1001):

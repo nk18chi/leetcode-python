@@ -7,7 +7,9 @@ from typing import List
 class Solution:
     # Time complexity: O(m+n)
     # Space complexity: O(1)
-    def intervalIntersection(self, A: List[List[int]], B: List[List[int]]) -> List[List[int]]:
+    def intervalIntersection(
+        self, A: List[List[int]], B: List[List[int]]
+    ) -> List[List[int]]:
         a: int = 0
         b: int = 0
         res: List[List[int]] = []

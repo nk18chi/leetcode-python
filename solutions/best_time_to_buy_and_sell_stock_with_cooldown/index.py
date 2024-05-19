@@ -11,7 +11,9 @@ class Solution:
     def maxProfit(self, prices):
         if len(prices) == 0:
             return 0
-        dp: List[List[int]] = [[0 for _ in range(len(prices))] for _ in range(len(prices))]
+        dp: List[List[int]] = [
+            [0 for _ in range(len(prices))] for _ in range(len(prices))
+        ]
         for i in range(len(prices)):
             prevMax: int = dp[i - 2][i - 2] if i - 2 >= 0 and j - 2 >= 0 else 0
             for j in range(i, len(prices)):

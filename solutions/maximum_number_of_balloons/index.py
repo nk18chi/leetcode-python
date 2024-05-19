@@ -8,13 +8,7 @@ class Solution:
     # Time complexity: O(n)
     # Space complexity: O(1)
     def maxNumberOfBalloons(self, text: str) -> int:
-        charMap: Dict[str, int] = {
-            "b": 0,
-            "a": 0,
-            "l": 0,
-            "o": 0,
-            "n": 0
-        }
+        charMap: Dict[str, int] = {"b": 0, "a": 0, "l": 0, "o": 0, "n": 0}
         for t in text:
             if t not in charMap:
                 continue

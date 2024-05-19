@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -40,6 +39,7 @@ class ListNode:
 
 def createListNode(list):
     from collections import deque
+
     data = list
     n = iter(data)
     node = ListNode(next(n))
@@ -92,6 +92,7 @@ class Solution:
             dfs(root.left)
             array.append(root.val)
             dfs(root.right)
+
         dfs(root)
 
         res: TreeNode = TreeNode(None)
@@ -102,13 +103,16 @@ class Solution:
             mid: int = len(list) // 2
             root.val = list[mid]
             root.left = helper(list[:mid], TreeNode(None))
-            root.right = helper(list[mid + 1:], TreeNode(None))
+            root.right = helper(list[mid + 1 :], TreeNode(None))
             return root
+
         res = helper(array, res)
 
         return res
 
-    def maxPerformance(self, n: int, speed: List[int], efficiency: List[int], k: int) -> int:
+    def maxPerformance(
+        self, n: int, speed: List[int], efficiency: List[int], k: int
+    ) -> int:
         total: List[List[int]] = []
         i: int = 0
         for s, e in zip(speed, efficiency):

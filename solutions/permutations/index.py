@@ -22,11 +22,11 @@ class Solution:
             ans.append(nums[i:] + nums[:i])
         length = len(nums)
         index = length - 1
-        while (index > 1):
+        while index > 1:
             res = []
             for a in ans:
-                fix = a[:length - index]
-                list = a[length - index:]
+                fix = a[: length - index]
+                list = a[length - index :]
                 for i in range(1, len(list)):
                     res.append(fix + list[i:] + list[:i])
             ans.extend(res)

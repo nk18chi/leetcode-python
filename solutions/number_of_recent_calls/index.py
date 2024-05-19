@@ -41,6 +41,7 @@ class Solution:
 
         def __init__(self):
             import collections
+
             self.q = collections.deque()
 
         def ping(self, t):
@@ -58,11 +59,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -90,6 +90,7 @@ class ListNode:
 
 def createListNode(list):
     from collections import deque
+
     data = list
     n = iter(data)
     node = ListNode(next(n))

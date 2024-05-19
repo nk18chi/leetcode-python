@@ -15,11 +15,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -52,13 +51,20 @@ class Solution:
                 return 0
 
             left = helper(self, root.left)
-            left = left + 1 if root.left is not None and root.val == root.left.val else 0
+            left = (
+                left + 1 if root.left is not None and root.val == root.left.val else 0
+            )
             right = helper(self, root.right)
-            right = right + 1 if root.right is not None and root.val == root.right.val else 0
+            right = (
+                right + 1
+                if root.right is not None and root.val == root.right.val
+                else 0
+            )
 
             self.total = max(self.total, left + right)
 
             return max(left, right)
+
         helper(self, root)
         return self.total
 
@@ -89,5 +95,5 @@ class Solution:
     #         return max(l, r)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

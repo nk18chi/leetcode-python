@@ -5,7 +5,6 @@ from typing import List, Set
 
 
 class Solution:
-
     def reverseVowels(self, s: str) -> str:
         left: int = 0
         right: int = len(s) - 1

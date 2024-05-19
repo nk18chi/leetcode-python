@@ -57,7 +57,7 @@ class Solution:
             for i in range(L):
                 # Key is the generic word
                 # Value is a list of words which have the same intermediate generic word.
-                all_combo_dict[word[:i] + "*" + word[i + 1:]].append(word)
+                all_combo_dict[word[:i] + "*" + word[i + 1 :]].append(word)
 
         # Queue for BFS
         queue = collections.deque([(beginWord, 1)])
@@ -67,7 +67,7 @@ class Solution:
             current_word, level = queue.popleft()
             for i in range(L):
                 # Intermediate words for current word
-                intermediate_word = current_word[:i] + "*" + current_word[i + 1:]
+                intermediate_word = current_word[:i] + "*" + current_word[i + 1 :]
 
                 # Next states are all the words which share the same intermediate state.
                 for word in all_combo_dict[intermediate_word]:

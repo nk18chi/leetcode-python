@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -35,28 +34,28 @@ def createTreeNode(list):
 class Solution:
     def getNoZeroIntegers(self, n: int) -> List[int]:
         i = n
-        while(True):
-            if '0' in str(i - 1) or '0' in str(n - i + 1):
+        while True:
+            if "0" in str(i - 1) or "0" in str(n - i + 1):
                 i -= 1
                 continue
             else:
                 return [i - 1, n - i + 1]
 
     def minFlips(self, a: int, b: int, c: int) -> int:
-        A = format(a, 'b')
-        B = format(b, 'b')
-        C = format(c, 'b')
+        A = format(a, "b")
+        B = format(b, "b")
+        C = format(c, "b")
 
         max_len = max([len(A), len(B), len(C)])
         if max_len != len(A):
             for i in range(max_len - len(A)):
-                A = '0' + A
+                A = "0" + A
         if max_len != len(B):
             for i in range(max_len - len(B)):
-                B = '0' + B
+                B = "0" + B
         if max_len != len(C):
             for i in range(max_len - len(C)):
-                C = '0' + C
+                C = "0" + C
 
         cnt = 0
         for a, b, c in zip(A, B, C):

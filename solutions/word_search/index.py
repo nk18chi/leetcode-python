@@ -19,8 +19,12 @@ class Solution:
             if board[row][col] != word[0]:
                 return False
             board[row][col] = "-"
-            res: bool = helper(board, word[1:], row + 1, col) or helper(board, word[1:], row - 1,
-                                                                        col) or helper(board, word[1:], row, col + 1) or helper(board, word[1:], row, col - 1)
+            res: bool = (
+                helper(board, word[1:], row + 1, col)
+                or helper(board, word[1:], row - 1, col)
+                or helper(board, word[1:], row, col + 1)
+                or helper(board, word[1:], row, col - 1)
+            )
             board[row][col] = word[0]
             return res
 

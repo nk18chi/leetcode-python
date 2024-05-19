@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -40,6 +39,7 @@ class ListNode:
 
 def createListNode(list):
     from collections import deque
+
     data = list
     n = iter(data)
     node = ListNode(next(n))
@@ -94,7 +94,9 @@ class Solution:
             res += right == i
         return res
 
-    def numOfMinutes(self, n: int, headID: int, manager: List[int], informTime: List[int]) -> int:
+    def numOfMinutes(
+        self, n: int, headID: int, manager: List[int], informTime: List[int]
+    ) -> int:
         assitance: Dict[int, List[int]] = {}
         interval: Dict[int, int] = {}
         for i in range(len(manager)):

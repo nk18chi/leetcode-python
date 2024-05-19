@@ -9,11 +9,7 @@ class Solution:
         if len(s) == 0:
             return True
 
-        dict = {
-            ")": "(",
-            "}": "{",
-            "]": "["
-        }
+        dict = {")": "(", "}": "{", "]": "["}
         stack = []
         for c in s:
             if c in dict.values():

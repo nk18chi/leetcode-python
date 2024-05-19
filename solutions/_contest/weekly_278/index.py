@@ -28,9 +28,11 @@ class Solution:
                 res.append(i + 1)
         return res
 
-    def subStrHash(self, s: str, power: int, modulo: int, k: int, hashValue: int) -> str:
+    def subStrHash(
+        self, s: str, power: int, modulo: int, k: int, hashValue: int
+    ) -> str:
         def val(c):
-            return ord(c) - ord('a') + 1
+            return ord(c) - ord("a") + 1
 
         res = n = len(s)
         pk = pow(power, k, modulo)
@@ -42,4 +44,4 @@ class Solution:
                 cur = (cur - val(s[i + k]) * pk) % modulo
             if cur == hashValue:
                 res = i
-        return s[res: res + k]
+        return s[res : res + k]

@@ -15,4 +15,9 @@ class Solution:
                 return gcp(b % a, a)
 
         d: int = gcp(len(str1), len(str2))
-        return str1[:d] if str1[:d] * (len(str2) // d) == str2 and str2[:d] * (len(str1) // d) == str1 else ""
+        return (
+            str1[:d]
+            if str1[:d] * (len(str2) // d) == str2
+            and str2[:d] * (len(str1) // d) == str1
+            else ""
+        )

@@ -13,6 +13,6 @@ class Solution:
         dp[0] = True
         for i in range(len(s)):
             for w in wordDict:
-                if dp[i - len(w) + 1] and s[i - len(w) + 1:i + 1] == w:
+                if dp[i - len(w) + 1] and s[i - len(w) + 1 : i + 1] == w:
                     dp[i + 1] = True
         return dp[-1]

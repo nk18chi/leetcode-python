@@ -11,11 +11,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -43,6 +42,7 @@ class ListNode:
 
 def createListNode(list):
     from collections import deque
+
     data = list
     n = iter(data)
     node = ListNode(next(n))
@@ -67,7 +67,9 @@ def getValFromListNode(node: ListNode):
 
 
 class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> Optional['TreeNode']:
+    def lowestCommonAncestor(
+        self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
+    ) -> Optional["TreeNode"]:
         self.res: Optional[TreeNode] = None
 
         def helper(self, root):

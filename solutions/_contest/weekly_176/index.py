@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -75,13 +74,13 @@ class Solution:
                     break
         return len(used_day)
 
-# Input: target = [9,3,5]
-# Output: true
-# Explanation: Start with [1, 1, 1]
-# [1, 1, 1], sum = 3 choose index 1
-# [1, 3, 1], sum = 5 choose index 2
-# [1, 3, 5], sum = 9 choose index 0
-# [9, 3, 5] Done
+    # Input: target = [9,3,5]
+    # Output: true
+    # Explanation: Start with [1, 1, 1]
+    # [1, 1, 1], sum = 3 choose index 1
+    # [1, 3, 1], sum = 5 choose index 2
+    # [1, 3, 5], sum = 9 choose index 0
+    # [9, 3, 5] Done
     # def isPossible(self, target: List[int]) -> bool:
     #     target.sort()
     #     self.checked = set()
@@ -110,6 +109,7 @@ class Solution:
 
     def isPossible(self, A):
         import bisect
+
         total = sum(A)
         A.sort()
         while True:

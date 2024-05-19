@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -41,11 +40,13 @@ class Solution:
 
         return 2
 
-    def filterRestaurants(self,
-                          restaurants: List[List[int]],
-                          veganFriendly: int,
-                          maxPrice: int,
-                          maxDistance: int) -> List[int]:
+    def filterRestaurants(
+        self,
+        restaurants: List[List[int]],
+        veganFriendly: int,
+        maxPrice: int,
+        maxDistance: int,
+    ) -> List[int]:
         res = []
         restaurants.sort(key=lambda x: (x[1], x[0]), reverse=True)
         for r in restaurants:

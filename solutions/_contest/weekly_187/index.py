@@ -5,7 +5,7 @@ import heapq
 class Solution:
     def destCity(self, paths: List[List[str]]) -> str:
         dict: Dict[str, Optional[str]] = {}
-        for (start, dest) in paths:
+        for start, dest in paths:
             dict[start] = dest
             if dest not in dict:
                 dict[dest] = None
@@ -50,7 +50,7 @@ class Solution:
         for i in range(len(nums)):
             heapq.heappush(maxq, (-nums[i], i))
             heapq.heappush(minq, (nums[i], i))
-            while - maxq[0][0] - minq[0][0] > limit:
+            while -maxq[0][0] - minq[0][0] > limit:
                 pointer = min(maxq[0][1], minq[0][1]) + 1
                 while maxq[0][1] < pointer:
                     heapq.heappop(maxq)

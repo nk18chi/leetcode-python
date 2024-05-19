@@ -17,5 +17,6 @@ class Solution:
                 return
             for i in graph[cur]:
                 dfs(i, path + [i])
+
         dfs(0, [0])
         return res

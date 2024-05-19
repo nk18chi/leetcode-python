@@ -11,7 +11,7 @@ class Solution:
             interests[r] = i
 
         res: List[str] = []
-        minSum: float = float('inf')
+        minSum: float = float("inf")
         for i, r in enumerate(list2):
             if r not in interests:
                 continue

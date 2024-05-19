@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -58,7 +57,6 @@ class Solution:
         return count
 
     class TweetCounts:
-
         def __init__(self):
             self.dict: Dict[str, List[int]] = {}
 
@@ -69,13 +67,9 @@ class Solution:
                 self.dict[tweetName] = [time]
 
         def getTweetCountsPerFrequency(
-                self,
-                freq: str,
-                tweetName: str,
-                startTime: int,
-                endTime: int) -> List[int]:
-            interval: Dict[str, int] = {
-                "minute": 60, "hour": 3600, "day": 86400}
+            self, freq: str, tweetName: str, startTime: int, endTime: int
+        ) -> List[int]:
+            interval: Dict[str, int] = {"minute": 60, "hour": 3600, "day": 86400}
             divide: int = interval[freq]
             self.res: List[int] = []
             tweets: List[int] = self.dict[tweetName]
@@ -87,8 +81,14 @@ class Solution:
                     if tweets[i] < start or tweets[i] > end:
                         break
                     if tweets[i] >= divide:
-                        helper(self, tweets[i:], start, end,
-                               divide * loopCount, loopCount + 1)
+                        helper(
+                            self,
+                            tweets[i:],
+                            start,
+                            end,
+                            divide * loopCount,
+                            loopCount + 1,
+                        )
                         break
                     count[0] += 1
                 self.res = count + self.res

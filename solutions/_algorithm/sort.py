@@ -35,7 +35,7 @@ class Sort:
         i: int = 0
         j: int = 0
         res: List[int] = []
-        while (i < len(L) and j < len(R)):
+        while i < len(L) and j < len(R):
             if L[i] < R[j]:
                 res.append(L[i])
                 i += 1

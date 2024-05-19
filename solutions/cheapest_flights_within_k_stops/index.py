@@ -9,7 +9,9 @@ import heapq
 class Solution:
     # Time complexity: O(v + e)
     # Space complexity: O(n)
-    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, K: int) -> int:
+    def findCheapestPrice(
+        self, n: int, flights: List[List[int]], src: int, dst: int, K: int
+    ) -> int:
         flightMap: Dict[int, List[List[int]]] = collections.defaultdict(list)
         for f in flights:
             flightMap[f[0]].append([f[1], f[2]])

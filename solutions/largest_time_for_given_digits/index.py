@@ -53,6 +53,7 @@ class Solution:
 
     def largestTimeFromDigits(self, A: List[int]) -> str:
         import itertools
+
         res: int = -1
         for t in itertools.permutations(A):
             time: int = t[3] * 1000 + t[2] * 100 + t[1] * 10 + t[0]

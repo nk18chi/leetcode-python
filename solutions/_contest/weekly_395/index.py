@@ -6,7 +6,7 @@ class Solution:
         return min(nums2) - min(nums1)
 
     def minimumAddedInteger(self, nums1: List[int], nums2: List[int]) -> int:
-        result: int = float('inf')
+        result: int = float("inf")
         nums1.sort()
         nums2.sort()
         for i in range(len(nums1)):

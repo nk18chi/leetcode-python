@@ -14,6 +14,8 @@ class Solution:
                 if matrix[r][c] == 0:
                     continue
                 if r > 0 and c > 0:
-                    matrix[r][c] += min(matrix[r - 1][c], matrix[r][c - 1], matrix[r - 1][c - 1])
+                    matrix[r][c] += min(
+                        matrix[r - 1][c], matrix[r][c - 1], matrix[r - 1][c - 1]
+                    )
                 res += matrix[r][c]
         return res

@@ -18,14 +18,14 @@ class Solution:
         len_width = len(mat[0])
         max_length = min(len_height, len_width)
 
-        while (max_length > 0):
+        while max_length > 0:
             for i in range(0, len_height):
                 sum_list: List[int] = []
                 row_count = 1
                 for m in mat[i:]:
                     list = []
                     for j in range(0, len_width):
-                        list.append(sum(m[j: j + max_length]))
+                        list.append(sum(m[j : j + max_length]))
                     if row_count <= max_length:
                         if not sum_list:
                             sum_list = list[::]
@@ -47,11 +47,11 @@ class Solution:
         low_digits = len(str(low)) - 1
         target = low
         list = []
-        while (target <= high):
-            i = target // (10 ** low_digits)
+        while target <= high:
+            i = target // (10**low_digits)
             if i > 9 - low_digits:
                 low_digits += 1
-                target = 10 ** low_digits
+                target = 10**low_digits
                 continue
             else:
                 sum = 0
@@ -62,11 +62,11 @@ class Solution:
                     i += 1
                     count += 1
                 if sum < low:
-                    target = (j + 1) * (10 ** low_digits)
+                    target = (j + 1) * (10**low_digits)
                 elif sum > high:
                     break
                 else:
                     list.append(sum)
-                    target = (j + 1) * (10 ** low_digits)
+                    target = (j + 1) * (10**low_digits)
 
         return list

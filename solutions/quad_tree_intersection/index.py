@@ -5,14 +5,7 @@
 
 
 class Node:
-    def __init__(
-            self,
-            val,
-            isLeaf,
-            topLeft,
-            topRight,
-            bottomLeft,
-            bottomRight):
+    def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):
         self.val = val
         self.isLeaf = isLeaf
         self.topLeft = topLeft
@@ -22,7 +15,7 @@ class Node:
 
 
 class Solution:
-    def intersect(self, qt1: 'Node', qt2: 'Node') -> 'Node':
+    def intersect(self, qt1: "Node", qt2: "Node") -> "Node":
         if not qt1 or not qt2:
             return
         if qt1.isLeaf:
@@ -35,7 +28,16 @@ class Solution:
         qt1.bottomLeft = self.intersect(qt1.bottomLeft, qt2.bottomLeft)
         qt1.bottomRight = self.intersect(qt1.bottomRight, qt2.bottomRight)
 
-        if qt1.topLeft.isLeaf and qt1.topRight.isLeaf and qt1.bottomLeft.isLeaf and qt1.bottomRight.isLeaf and qt1.topLeft.val == qt1.topRight.val == qt1.bottomLeft.val == qt1.bottomRight.val:
+        if (
+            qt1.topLeft.isLeaf
+            and qt1.topRight.isLeaf
+            and qt1.bottomLeft.isLeaf
+            and qt1.bottomRight.isLeaf
+            and qt1.topLeft.val
+            == qt1.topRight.val
+            == qt1.bottomLeft.val
+            == qt1.bottomRight.val
+        ):
             qt1.isLeaf = True
             qt1.val = qt1.topLeft.val
 

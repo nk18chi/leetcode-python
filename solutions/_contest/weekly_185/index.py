@@ -4,6 +4,7 @@ from typing import List, Dict, Set, Tuple
 class Solution:
     def reformat(self, s: str) -> str:
         import itertools
+
         string: str = ""
         i: str = ""
         for c in s:
@@ -50,7 +51,7 @@ class Solution:
         for c in croakOfFrogs:
             char[c] += 1
             if c != "c" and char[c] > char[prev[c]]:
-                return - 1
+                return -1
             if c != "k":
                 res = max(res, char[c] - char["k"])
         return res if char["c"] == char["k"] else -1
@@ -69,4 +70,5 @@ class Solution:
             for nj in range(j + 1, m + 1):
                 cnt = (cnt + dfs(i + 1, nj, k - 1)) % mod
             return cnt
+
         return dfs(0, 0, k)

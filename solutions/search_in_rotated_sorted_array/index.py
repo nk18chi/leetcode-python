@@ -23,4 +23,5 @@ class Solution:
                 return bs(start, mid - 1)
             else:
                 return bs(mid + 1, end)
+
         return bs(0, len(nums) - 1)

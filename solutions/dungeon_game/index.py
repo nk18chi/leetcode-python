@@ -8,7 +8,10 @@ class Solution:
     # Time complexity: O(mm)
     # Space complexity: O(mm)
     def calculateMinimumHP(self, dungeon: List[List[int]]) -> int:
-        dp: List[List[float]] = [[float("inf") for _ in range(len(dungeon[0]) + 1)] for _ in range(len(dungeon) + 1)]
+        dp: List[List[float]] = [
+            [float("inf") for _ in range(len(dungeon[0]) + 1)]
+            for _ in range(len(dungeon) + 1)
+        ]
         dp[-1][len(dungeon[0]) - 1], dp[len(dungeon) - 1][-1] = 1, 1
         for i in range(len(dungeon) - 1, -1, -1):
             for j in range(len(dungeon[0]) - 1, -1, -1):

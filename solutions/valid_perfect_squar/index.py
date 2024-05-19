@@ -13,9 +13,9 @@ class Solution:
         right: int = num
         while left <= right:
             mid: int = (left + right) // 2
-            if mid ** 2 == num:
+            if mid**2 == num:
                 return True
-            elif mid ** 2 > num:
+            elif mid**2 > num:
                 right = mid - 1
             else:
                 left = mid + 1

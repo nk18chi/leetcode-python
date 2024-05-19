@@ -24,7 +24,7 @@ class Solution:
         compare = 0
         for char in s[::-1]:
             if char in dict.keys():
-                sum += dict[char] if compare <= dict[char] else - dict[char]
+                sum += dict[char] if compare <= dict[char] else -dict[char]
                 compare = dict[char]
 
         return sum

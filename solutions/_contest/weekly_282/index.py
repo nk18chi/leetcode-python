@@ -42,7 +42,9 @@ class Solution:
                 r = mid - 1
         return ans
 
-    def minimumFinishTime(self, tires: List[List[int]], changeTime: int, numLaps: int) -> int:
+    def minimumFinishTime(
+        self, tires: List[List[int]], changeTime: int, numLaps: int
+    ) -> int:
         minimum = []
         total = [0] * len(tires)
         while True:
@@ -53,7 +55,7 @@ class Solution:
             if minimum[-1] > changeTime + minimum[0]:
                 break
 
-        dp = [float('inf')] * numLaps
+        dp = [float("inf")] * numLaps
         for l in range(numLaps):
             for pre in range(len(minimum)):
                 if l - pre - 1 < 0:

@@ -39,7 +39,7 @@ class Solution:
 
     def entityParser(self, text: str) -> str:
         replaceMap: List[Tuple[str, str]] = [
-            ("&quot;", "\""),
+            ("&quot;", '"'),
             ("&apos;", "'"),
             ("&gt;", ">"),
             ("&lt;", "<"),

@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -40,6 +39,7 @@ class ListNode:
 
 def createListNode(list):
     from collections import deque
+
     data = list
     n = iter(data)
     node = ListNode(next(n))
@@ -105,10 +105,18 @@ class Solution:
             if row == len(grid) - 1 and col == len(grid[0]):
                 self.res = True
                 return
-            if row == len(grid) - 2 and col == len(grid[0]) - 1 and grid[lastRow][lastCol] == 0:
+            if (
+                row == len(grid) - 2
+                and col == len(grid[0]) - 1
+                and grid[lastRow][lastCol] == 0
+            ):
                 self.res = True
                 return
-            if row == len(grid) - 1 and col == len(grid[0]) - 2 and grid[lastRow][lastCol] == 0:
+            if (
+                row == len(grid) - 1
+                and col == len(grid[0]) - 2
+                and grid[lastRow][lastCol] == 0
+            ):
                 self.res = True
                 return
             if row < 0 or row >= len(grid):

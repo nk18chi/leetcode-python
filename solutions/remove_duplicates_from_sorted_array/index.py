@@ -15,5 +15,5 @@ class Solution:
                 left += 1
                 nums[left] = nums[right]
             right += 1
-        nums = nums[:left + 1]
+        nums = nums[: left + 1]
         return left + 1

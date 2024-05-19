@@ -19,7 +19,7 @@ class Solution:
         # second solution
         split_count = balanced_number = 0
         for c in s:
-            balanced_number += 1 if c == "L" else - 1
+            balanced_number += 1 if c == "L" else -1
             if balanced_number == 0:
                 split_count += 1
         return split_count

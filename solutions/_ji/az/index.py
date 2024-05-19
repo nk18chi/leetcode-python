@@ -18,7 +18,7 @@ class Solution:
                 count += 1
         if count % 2 == 0:
             return len(badges)
-        return max(len(badges[pos[0] + 1:]), len(badges[:pos[1]]))
+        return max(len(badges[pos[0] + 1 :]), len(badges[: pos[1]]))
 
     def getImbalanceRank(self, ranks):
         count: int = 0
@@ -42,6 +42,10 @@ class Solution:
                 rightLen += 1
                 r += 1
 
-            count += (leftLen - leftLow) * (rightLen - rightLow) + (leftLen - leftLow) * (rightLow + 1) + (rightLen - rightLow) * (leftLow + 1)
+            count += (
+                (leftLen - leftLow) * (rightLen - rightLow)
+                + (leftLen - leftLow) * (rightLow + 1)
+                + (rightLen - rightLow) * (leftLow + 1)
+            )
 
         return count

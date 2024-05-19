@@ -54,5 +54,6 @@ class Solution:
                     cal(i - 1, n - aliceArrows[i] - 1, score + i, arr)
                     arr[i] = 0
                 cal(i - 1, n, score, arr)
+
         cal(len(aliceArrows) - 1, numArrows, 0, [0] * len(aliceArrows))
         return self.res

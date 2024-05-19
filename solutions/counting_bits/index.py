@@ -11,4 +11,4 @@ class Solution:
         res: List[int] = [0]
         while len(res) <= num:
             res += [res[x] + 1 for x in range(len(res))]
-        return res[:num + 1]
+        return res[: num + 1]

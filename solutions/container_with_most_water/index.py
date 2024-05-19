@@ -11,7 +11,7 @@ class Solution:
         res: int = 0
         left: int = 0
         right: int = len(height) - 1
-        while (left < right):
+        while left < right:
             square: int = min(height[left], height[right]) * (right - left)
             res = max(res, square)
             if height[left] == height[right]:

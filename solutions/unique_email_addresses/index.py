@@ -23,7 +23,7 @@ class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
         res: Set[str] = set()
         for e in emails:
-            local, domain = e.split('@')
+            local, domain = e.split("@")
             uniqueName: str = local.split("+")[0].replace(".", "")
             res.add(uniqueName + "@" + domain)
 

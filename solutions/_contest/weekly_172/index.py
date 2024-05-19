@@ -8,11 +8,10 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 def createTreeNode(list):
-
     from collections import deque
 
     data = list
@@ -36,20 +35,20 @@ class Solution:
     def maximum69Number(self, num: int) -> int:
         res = list(str(num))
         for i in range(len(res)):
-            if res[i] == '6':
-                res[i] = '9'
+            if res[i] == "6":
+                res[i] = "9"
                 break
         return int("".join(res))
 
     def printVertically(self, s: str) -> List[str]:
-        string = s.split(' ')
+        string = s.split(" ")
         max_length = 0
         for s in string:
             max_length = max(max_length, len(s))
 
         res = []
         index = 0
-        while (index < max_length):
+        while index < max_length:
             word = ""
             i = 0
             for s in string:
@@ -60,7 +59,7 @@ class Solution:
                     str = s[index]
                     i = 0
                 word += str
-            res += [word[:len(word) - i]]
+            res += [word[: len(word) - i]]
             index += 1
         return res
 

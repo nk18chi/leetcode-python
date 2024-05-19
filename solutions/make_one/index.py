@@ -15,7 +15,7 @@ class Solution:
     def make_one(self, n: int) -> int:
         list: List[int] = [n]
         count: int = 0
-        while (min(list) > 1):
+        while min(list) > 1:
             for i in range(len(list)):
                 if list[i] % 3 == 0:
                     list[i] = list[i] // 3

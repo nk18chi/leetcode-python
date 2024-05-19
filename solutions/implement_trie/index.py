@@ -4,7 +4,7 @@
 from typing import Dict
 
 
-class TrieNode():
+class TrieNode:
     def __init__(self):
         self.children: Dict[str, TrieNode] = {}
         self.isEnd = False

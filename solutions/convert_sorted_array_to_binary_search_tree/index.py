@@ -11,7 +11,7 @@ class TreeNode:
         self.right = None
 
     def __str__(self):
-        return f'<{self.val}, {self.left}, {self.right}>'
+        return f"<{self.val}, {self.left}, {self.right}>"
 
 
 class Solution:
@@ -22,6 +22,6 @@ class Solution:
         mid = len(nums) // 2
         node = TreeNode(nums[mid])
         node.left = self.sortedArrayToBST(nums[:mid])
-        node.right = self.sortedArrayToBST(nums[mid + 1:])
+        node.right = self.sortedArrayToBST(nums[mid + 1 :])
 
         return node

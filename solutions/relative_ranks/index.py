@@ -29,7 +29,11 @@ class Solution:
     def findRelativeRanks(self, nums: List[int]) -> List[str]:
         sortedNums: List[int] = sorted(nums, reverse=True)
         rankDict: Dict[int, str] = {}
-        rankNameDict: Dict[int, str] = {1: "Gold Medal", 2: "Silver Medal", 3: "Bronze Medal"}
+        rankNameDict: Dict[int, str] = {
+            1: "Gold Medal",
+            2: "Silver Medal",
+            3: "Bronze Medal",
+        }
         for i, n in enumerate(sortedNums, 1):
             rankDict[n] = rankNameDict[i] if i in rankNameDict else str(i)
 

@@ -17,6 +17,7 @@ class Solution:
                 return bs(self, list, mid + 1, end)
             else:
                 return bs(self, list, start, mid - 1)
+
         return bs(self, nums, 0, len(nums) - 1)
 
     # # without helper

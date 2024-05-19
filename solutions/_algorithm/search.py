@@ -10,7 +10,7 @@ class Search:
 
     def binarySearch(self, arr: List[int], start, end, target) -> int:
         if start > end:
-            return - 1
+            return -1
 
         mid: int = (start + end) // 2
         if arr[mid] == target:
