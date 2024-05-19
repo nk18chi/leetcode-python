@@ -1,6 +1,6 @@
 # import unittest
-# import solutions.construct_binary_search_tree_from_preorder_traversal.index as main
-# from solutions._class.tree_node import TreeNode, createTreeNode
+# import construct_binary_search_tree_from_preorder_traversal.index as main
+# from _class.tree_node import TreeNode, createTreeNode
 
 
 # class Test(unittest.TestCase):

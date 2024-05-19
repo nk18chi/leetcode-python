@@ -1,5 +1,5 @@
 import unittest
-import solutions.k_closest_points_to_origin.index as main
+import k_closest_points_to_origin.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.kClosest(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,8 +1,8 @@
 import unittest
-import solutions.format.index as main
-# from solutions._class.tree_node import TreeNode, createTreeNode, getTreeNode
-# from solutions._class.list_node import ListNode, createListNode, getListNode
-# from solutions._class.node import Node, createDoublyNode, getFlattenDoublyNode
+import format.index as main
+# from _class.tree_node import TreeNode, createTreeNode, getTreeNode
+# from _class.list_node import ListNode, createListNode, getListNode
+# from _class.node import Node, createDoublyNode, getFlattenDoublyNode
 
 
 class Test(unittest.TestCase):
@@ -27,5 +27,5 @@ class Test(unittest.TestCase):
         #         self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

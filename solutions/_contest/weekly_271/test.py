@@ -1,6 +1,6 @@
 import unittest
-import solutions._contest.weekly_271.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import _contest.weekly_271.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -40,5 +40,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.minimumRefill(arg1, arg2, arg3), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

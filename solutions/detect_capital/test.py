@@ -1,5 +1,5 @@
 import unittest
-import solutions.detect_capital.index as main
+import detect_capital.index as main
 
 
 class Test(unittest.TestCase):
@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
             ("Usa", True),
             ("usa", True),
             ("uSa", False),
-            ("FlaG", False)
+            ("FlaG", False),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.detectCapitalUse(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

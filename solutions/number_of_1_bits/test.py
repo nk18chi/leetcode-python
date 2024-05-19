@@ -1,5 +1,5 @@
 import unittest
-import solutions.number_of_1_bits.index as main
+import number_of_1_bits.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.hammingWeight(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

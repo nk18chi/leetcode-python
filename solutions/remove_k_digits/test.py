@@ -1,5 +1,5 @@
 import unittest
-import solutions.remove_k_digits.index as main
+import remove_k_digits.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.removeKdigits(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

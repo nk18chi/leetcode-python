@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/maximum-width-of-binary-tree/
 
 from typing import Deque, Tuple
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 from collections import deque
 
 

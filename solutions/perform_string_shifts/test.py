@@ -1,5 +1,5 @@
 import unittest
-import solutions.perform_string_shifts.index as main
+import perform_string_shifts.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.stringShift(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

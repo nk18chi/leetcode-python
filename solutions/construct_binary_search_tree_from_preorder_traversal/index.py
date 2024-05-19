@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
 
 from typing import List
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:
@@ -19,4 +19,5 @@ class Solution:
             node.left = helper(node.val)
             node.right = helper(v)
             return node
-        return helper(10 ** 8 + 1)
+
+        return helper(10**8 + 1)

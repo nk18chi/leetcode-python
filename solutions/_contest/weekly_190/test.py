@@ -1,6 +1,6 @@
 import unittest
-import solutions._contest.weekly_190.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import _contest.weekly_190.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -27,10 +27,7 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.pseudoPalindromicPaths(tree), expected)
 
     def test_maxDotProduct(self):
-        test_patterns = [
-            ([-1, -1], [1, 1], -1),
-            ([2, 1, -2, 5], [3, 0, -6], 18)
-        ]
+        test_patterns = [([-1, -1], [1, 1], -1), ([2, 1, -2, 5], [3, 0, -6], 18)]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -38,5 +35,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maxDotProduct(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

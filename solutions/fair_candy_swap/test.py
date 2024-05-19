@@ -1,5 +1,5 @@
 import unittest
-import solutions.fair_candy_swap.index as main
+import fair_candy_swap.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.fairCandySwap(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

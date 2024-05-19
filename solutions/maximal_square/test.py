@@ -1,13 +1,29 @@
 import unittest
-import solutions.maximal_square.index as main
+import maximal_square.index as main
 
 
 class Test(unittest.TestCase):
     def test_maximalSquare(self):
         test_patterns = [
-            ([["1", "0", "1", "0"], ["1", "0", "1", "1"], ["1", "0", "1", "1"], ["1", "1", "1", "1"]], 4),
+            (
+                [
+                    ["1", "0", "1", "0"],
+                    ["1", "0", "1", "1"],
+                    ["1", "0", "1", "1"],
+                    ["1", "1", "1", "1"],
+                ],
+                4,
+            ),
             ([], 0),
-            ([["1", "1", "1", "0", "0"], ["1", "1", "1", "1", "1"], ["1", "1", "1", "1", "1"], ["1", "0", "0", "1", "0"]], 9),
+            (
+                [
+                    ["1", "1", "1", "0", "0"],
+                    ["1", "1", "1", "1", "1"],
+                    ["1", "1", "1", "1", "1"],
+                    ["1", "0", "0", "1", "0"],
+                ],
+                9,
+            ),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -16,5 +32,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maximalSquare(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 from typing import List, Set, Dict, Tuple, Deque
 from collections import deque, defaultdict
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 import math
 
 
@@ -11,7 +11,7 @@ class Solution:
             if word[i] == ch:
                 index = i
                 break
-        return word[:index + 1][::-1] + word[index + 1:]
+        return word[: index + 1][::-1] + word[index + 1 :]
 
     def interchangeableRectangles(self, rectangles: List[List[int]]) -> int:
         res: int = 0

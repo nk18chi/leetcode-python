@@ -1,5 +1,5 @@
 import unittest
-import solutions.relative_ranks.index as main
+import relative_ranks.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findRelativeRanks(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

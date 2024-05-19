@@ -1,5 +1,5 @@
 import unittest
-import solutions.task_scheduler.index as main
+import task_scheduler.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.leastInterval(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,11 +1,11 @@
 import unittest
-import solutions.generate_parentheses.index as main
+import generate_parentheses.index as main
 
 
 class Test(unittest.TestCase):
     def test_generateParenthesis(self):
         test_patterns = [
-            (3, ['((()))', '(()())', '(())()', '()(())', '()()()']),
+            (3, ["((()))", "(()())", "(())()", "()(())", "()()()"]),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.generateParenthesis(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

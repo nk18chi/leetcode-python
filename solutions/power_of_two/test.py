@@ -1,10 +1,9 @@
 import unittest
 
-import solutions.power_of_two.index as main
+import power_of_two.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_isPowerOfTwo(self):
         test_patterns = [
             (0, False),
@@ -20,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isPowerOfTwo(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

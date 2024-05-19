@@ -1,14 +1,11 @@
 import unittest
-import solutions.middle_of_the_linked_list.index as main
-from solutions._class.list_node import ListNode, createListNode, getListNode
+import middle_of_the_linked_list.index as main
+from _class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):
     def test_middleNode(self):
-        test_patterns = [
-            ([1, 2, 3, 4, 5], [3, 4, 5]),
-            ([1, 2, 3, 4, 5, 6], [4, 5, 6])
-        ]
+        test_patterns = [([1, 2, 3, 4, 5], [3, 4, 5]), ([1, 2, 3, 4, 5, 6], [4, 5, 6])]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -18,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

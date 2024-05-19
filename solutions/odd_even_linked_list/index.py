@@ -1,7 +1,7 @@
 # 328. Odd Even Linked List
 # https://leetcode.com/problems/odd-even-linked-list/
 
-from solutions._class.list_node import ListNode
+from _class.list_node import ListNode
 
 
 class Solution:

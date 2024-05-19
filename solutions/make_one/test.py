@@ -1,5 +1,5 @@
 import unittest
-import solutions.make_one.index as main
+import make_one.index as main
 
 
 class Test(unittest.TestCase):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.make_one(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 import unittest
-import solutions.count_complete_tree_nodes.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import count_complete_tree_nodes.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.countNodes(tree), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

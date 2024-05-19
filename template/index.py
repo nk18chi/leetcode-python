@@ -2,9 +2,9 @@
 # url
 
 # from typing import List, Dict
-# from solutions._class.tree_node import TreeNode
-# from solutions._class.list_node import ListNode
-# from solutions._class.node import Node
+# from _class.tree_node import TreeNode
+# from _class.list_node import ListNode
+# from _class.node import Node
 
 
 class Solution:

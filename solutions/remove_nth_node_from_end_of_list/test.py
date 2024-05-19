@@ -1,6 +1,6 @@
 import unittest
-import solutions.remove_nth_node_from_end_of_list.index as main
-from solutions._class.list_node import ListNode, createListNode, getListNode
+import remove_nth_node_from_end_of_list.index as main
+from _class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):
@@ -21,5 +21,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

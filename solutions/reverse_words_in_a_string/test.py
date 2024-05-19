@@ -1,5 +1,5 @@
 import unittest
-import solutions.reverse_words_in_a_string.index as main
+import reverse_words_in_a_string.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.reverseWords(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

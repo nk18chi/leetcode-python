@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_194.index as main
+import _contest.weekly_194.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,7 +15,10 @@ class Test(unittest.TestCase):
 
     def test_getFolderNames(self):
         test_patterns = [
-            (["kaido", "kaido(1)", "kaido", "kaido(1)", "kaido(2)"], ["kaido", "kaido(1)", "kaido(2)", "kaido(1)(1)", "kaido(2)(1)"]),
+            (
+                ["kaido", "kaido(1)", "kaido", "kaido(1)", "kaido(2)"],
+                ["kaido", "kaido(1)", "kaido(2)", "kaido(1)(1)", "kaido(2)(1)"],
+            ),
             (["gta", "gta(1)", "gta", "avalon"], ["gta", "gta(1)", "gta(2)", "avalon"]),
             (["pes", "fifa", "gta", "pes(2019)"], ["pes", "fifa", "gta", "pes(2019)"]),
         ]
@@ -40,5 +43,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.avoidFlood(arg1), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

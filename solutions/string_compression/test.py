@@ -3,59 +3,62 @@
 
 import unittest
 
-import solutions.string_compression.index as main
+import string_compression.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_compress(self):
         test_patterns = [
             # (["a", "b", "c"], 3),
             # (["a", "a", "a"], 2),
             # (["a", "a", "b", "b", "c", "c", "c"], 6),
             # (["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"], 4),
-            (["a",
-              "a",
-              "a",
-              "a",
-              "a",
-              "a",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "b",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c",
-              "c"],
-             8),
+            (
+                [
+                    "a",
+                    "a",
+                    "a",
+                    "a",
+                    "a",
+                    "a",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "b",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                    "c",
+                ],
+                8,
+            ),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -65,5 +68,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.compress(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

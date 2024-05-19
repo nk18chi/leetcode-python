@@ -1,7 +1,7 @@
 # 129. Sum Root to Leaf Numbers
 # https://leetcode.com/problems/sum-root-to-leaf-numbers/
 
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

@@ -1,5 +1,5 @@
 import unittest
-import solutions.valid_anagram.index as main
+import valid_anagram.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isAnagram(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

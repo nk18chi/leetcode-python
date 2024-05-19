@@ -1,5 +1,5 @@
 import unittest
-import solutions.find_the_duplicate_number.index as main
+import find_the_duplicate_number.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findDuplicate(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

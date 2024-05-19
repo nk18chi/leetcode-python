@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.matrix_cells_in_distance_order.index as main
+import matrix_cells_in_distance_order.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,10 +15,8 @@ class Test(unittest.TestCase):
         for i, (arg1, arg2, arg3, arg4, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
                 s = main.Solution()
-                self.assertEqual(
-                    s.allCellsDistOrder(
-                        arg1, arg2, arg3, arg4), expected)
+                self.assertEqual(s.allCellsDistOrder(arg1, arg2, arg3, arg4), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

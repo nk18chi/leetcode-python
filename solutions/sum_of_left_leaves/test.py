@@ -1,7 +1,7 @@
-# import solutions.sum_of_left_leaves.index as main
+# import sum_of_left_leaves.index as main
 import unittest
 
-import solutions.sum_of_left_leaves.index as main
+import sum_of_left_leaves.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.sumOfLeftLeaves(tree), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

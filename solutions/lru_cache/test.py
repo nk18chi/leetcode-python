@@ -1,5 +1,5 @@
 import unittest
-import solutions.lru_cache.index as main
+import lru_cache.index as main
 
 
 class Test(unittest.TestCase):
@@ -31,5 +31,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(lrc.get(2), 3)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

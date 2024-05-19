@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_180.index as main
+import _contest.weekly_180.index as main
 
 
 class Test(unittest.TestCase):
@@ -7,7 +7,7 @@ class Test(unittest.TestCase):
         test_patterns = [
             ([[3, 7, 8], [9, 11, 13], [15, 16, 17]], [15]),
             ([[1, 10, 4, 2], [9, 3, 8, 7], [15, 16, 17, 12]], [12]),
-            ([[7, 8], [1, 2]], [7])
+            ([[7, 8], [1, 2]], [7]),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -42,5 +42,5 @@ class Test(unittest.TestCase):
     #             self.assertEqual(s.maxPerformance(arg1, arg2, arg3, arg4), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

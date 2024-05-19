@@ -1,6 +1,6 @@
 import unittest
-import solutions.leftmost_column_with_at_least_a_one.index as main
-from solutions._class.binary_matrix import BinaryMatrix
+import leftmost_column_with_at_least_a_one.index as main
+from _class.binary_matrix import BinaryMatrix
 
 
 class Test(unittest.TestCase):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.leftMostColumnWithOne(bx), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

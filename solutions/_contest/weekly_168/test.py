@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_168.index as main
+import _contest.weekly_168.index as main
 
 
 class Test(unittest.TestCase):
@@ -19,7 +19,7 @@ class Test(unittest.TestCase):
             ("aababcaab", 2, 3, 4, 2),
             ("aaaa", 1, 3, 3, 2),
             ("aabcabcab", 2, 2, 3, 3),
-            ("abcde", 2, 3, 3, 0)
+            ("abcde", 2, 3, 3, 0),
         ]
 
         for i, (arg1, arg2, arg3, arg4, expected) in enumerate(test_patterns):
@@ -61,5 +61,5 @@ class Test(unittest.TestCase):
     #                 expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

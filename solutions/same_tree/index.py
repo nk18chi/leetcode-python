@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/same-tree/
 
 # from typing import List, Dict
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

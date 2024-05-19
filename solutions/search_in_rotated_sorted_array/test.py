@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.search_in_rotated_sorted_array.index as main
+import search_in_rotated_sorted_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -26,5 +26,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.search(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

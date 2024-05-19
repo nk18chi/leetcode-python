@@ -1,5 +1,5 @@
 import unittest
-import solutions.number_of_recent_calls.index as main
+import number_of_recent_calls.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(r.ping(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

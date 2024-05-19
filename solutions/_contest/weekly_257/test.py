@@ -1,6 +1,6 @@
 import unittest
-import solutions._contest.weekly_257.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import _contest.weekly_257.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -18,7 +18,20 @@ class Test(unittest.TestCase):
 
     def test_numberOfWeakCharacters(self):
         test_patterns = [
-            ([[1, 1], [2, 2], [3, 4], [10, 2], [2, 2], [9, 1], [8, 1], [7, 1], [12, 3]], 7),
+            (
+                [
+                    [1, 1],
+                    [2, 2],
+                    [3, 4],
+                    [10, 2],
+                    [2, 2],
+                    [9, 1],
+                    [8, 1],
+                    [7, 1],
+                    [12, 3],
+                ],
+                7,
+            ),
             ([[5, 5], [6, 3], [3, 6]], 0),
             ([[2, 2], [3, 3]], 1),
             ([[1, 5], [10, 4], [4, 3]], 1),
@@ -30,5 +43,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.numberOfWeakCharacters(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.move_zeroes.index as main
+import move_zeroes.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(arg, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

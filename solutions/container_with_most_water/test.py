@@ -1,5 +1,5 @@
 import unittest
-import solutions.container_with_most_water.index as main
+import container_with_most_water.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maxArea(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

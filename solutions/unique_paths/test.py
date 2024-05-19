@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.unique_paths.index as main
+import unique_paths.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.uniquePaths(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.evaluate_reverse_polish_notation.index as main
+import evaluate_reverse_polish_notation.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.evalRPN(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

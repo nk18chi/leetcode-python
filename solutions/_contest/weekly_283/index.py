@@ -1,5 +1,5 @@
 from typing import List, Optional, Dict, Set
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 import math
 
 

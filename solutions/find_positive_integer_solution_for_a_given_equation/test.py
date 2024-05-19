@@ -1,5 +1,5 @@
 import unittest
-import solutions.find_positive_integer_solution_for_a_given_equation.index as main
+import find_positive_integer_solution_for_a_given_equation.index as main
 
 
 class CustomFunction:
@@ -8,7 +8,6 @@ class CustomFunction:
 
 
 class Test(unittest.TestCase):
-
     def test_findSolution(self):
         test_patterns = [
             (5, [[1, 4], [2, 3], [3, 2], [4, 1]]),
@@ -21,5 +20,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findSolution(c, arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

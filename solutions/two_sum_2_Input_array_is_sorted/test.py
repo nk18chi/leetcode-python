@@ -1,5 +1,5 @@
 import unittest
-import solutions.two_sum_2_Input_array_is_sorted.index as main
+import two_sum_2_Input_array_is_sorted.index as main
 
 
 class Test(unittest.TestCase):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.twoSum(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

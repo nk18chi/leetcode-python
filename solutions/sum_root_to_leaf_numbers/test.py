@@ -1,6 +1,6 @@
 import unittest
-import solutions.sum_root_to_leaf_numbers.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import sum_root_to_leaf_numbers.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.sumNumbers(tree), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

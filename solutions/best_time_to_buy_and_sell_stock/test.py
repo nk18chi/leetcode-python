@@ -1,5 +1,5 @@
 import unittest
-import solutions.best_time_to_buy_and_sell_stock.index as main
+import best_time_to_buy_and_sell_stock.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maxProfit(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

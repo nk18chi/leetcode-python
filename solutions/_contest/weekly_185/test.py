@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_185.index as main
+import _contest.weekly_185.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,8 +16,24 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.reformat(arg), expected)
 
     def test_displayTable(self):
-        test_patterns = [([["David", "3", "Ceviche"], ["Corina", "10", "Beef Burrito"], ["David", "3", "Fried Chicken"], ["Carla", "5", "Water"], ["Carla", "5", "Ceviche"], [
-                           "Rous", "3", "Ceviche"]], [["Table", "Beef Burrito", "Ceviche", "Fried Chicken", "Water"], ["3", "0", "2", "1", "0"], ["5", "0", "1", "0", "1"], ["10", "1", "0", "0", "0"]]), ]
+        test_patterns = [
+            (
+                [
+                    ["David", "3", "Ceviche"],
+                    ["Corina", "10", "Beef Burrito"],
+                    ["David", "3", "Fried Chicken"],
+                    ["Carla", "5", "Water"],
+                    ["Carla", "5", "Ceviche"],
+                    ["Rous", "3", "Ceviche"],
+                ],
+                [
+                    ["Table", "Beef Burrito", "Ceviche", "Fried Chicken", "Water"],
+                    ["3", "0", "2", "1", "0"],
+                    ["5", "0", "1", "0", "1"],
+                    ["10", "1", "0", "0", "0"],
+                ],
+            ),
+        ]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -48,5 +64,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.numOfArrays(arg1, arg2, arg3), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

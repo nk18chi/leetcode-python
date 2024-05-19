@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.min_cost_climbing_stairs.index as main
+import min_cost_climbing_stairs.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.minCostClimbingStairs(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

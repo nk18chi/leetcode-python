@@ -1,5 +1,5 @@
 import unittest
-import solutions.kth_largest_element_in_a_stream.index as main
+import kth_largest_element_in_a_stream.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                     self.assertEqual(k.add(e[0]), e[1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

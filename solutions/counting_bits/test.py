@@ -1,5 +1,5 @@
 import unittest
-import solutions.counting_bits.index as main
+import counting_bits.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.countBits(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 import unittest
-import solutions.clone_graph.index as main
-from solutions._class.node import Node, createDoublyNeighborNode, getFlattenNeighborNode
+import clone_graph.index as main
+from _class.node import Node, createDoublyNeighborNode, getFlattenNeighborNode
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(getFlattenNeighborNode(s.cloneGraph(node)), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

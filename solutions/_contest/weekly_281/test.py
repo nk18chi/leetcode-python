@@ -1,6 +1,6 @@
 import unittest
-import solutions._contest.weekly_281.index as main
-from solutions._class.list_node import ListNode, createListNode, getListNode
+import _contest.weekly_281.index as main
+from _class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):
@@ -34,5 +34,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

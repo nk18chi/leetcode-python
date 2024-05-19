@@ -1,5 +1,5 @@
 import unittest
-import solutions.contains_duplicate.index as main
+import contains_duplicate.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.containsDuplicate(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

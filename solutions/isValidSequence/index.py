@@ -2,7 +2,7 @@
 # https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/532/week-5/3315/
 
 from typing import List
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:
@@ -15,4 +15,5 @@ class Solution:
             elif len(arr) == index + 1 and not root.left and not root.right:
                 return True
             return dfs(root.left, index + 1) or dfs(root.right, index + 1)
+
         return dfs(root, 0)

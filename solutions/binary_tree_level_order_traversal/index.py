@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/binary-tree-level-order-traversal/description/
 
 from typing import List, Deque, Optional, Tuple
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 from collections import deque
 
 

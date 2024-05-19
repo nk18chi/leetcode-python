@@ -1,5 +1,5 @@
 import unittest
-import solutions.n_repeated_element_in_size_2n_array.index as main
+import n_repeated_element_in_size_2n_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.repeatedNTimes(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

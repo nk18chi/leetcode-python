@@ -1,5 +1,5 @@
 import unittest
-import solutions.first_bad_version.index as main
+import first_bad_version.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.firstBadVersion(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

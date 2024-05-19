@@ -1,5 +1,5 @@
 import unittest
-import solutions.find_first_and_last_position_of_element_in_sorted_array.index as main
+import find_first_and_last_position_of_element_in_sorted_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.searchRange(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

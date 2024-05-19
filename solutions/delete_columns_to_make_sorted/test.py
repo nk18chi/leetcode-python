@@ -1,5 +1,5 @@
 import unittest
-import solutions.delete_columns_to_make_sorted.index as main
+import delete_columns_to_make_sorted.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.minDeletionSize(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.non_decreasing_rray.index as main
+import non_decreasing_rray.index as main
 
 
 class Test(unittest.TestCase):
@@ -21,5 +21,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.checkPossibility(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

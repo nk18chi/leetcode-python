@@ -1,7 +1,7 @@
 # 700. Search in a Binary Search Tree
 # https://leetcode.com/problems/search-in-a-binary-search-tree/
 
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

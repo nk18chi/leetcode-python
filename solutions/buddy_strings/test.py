@@ -1,9 +1,8 @@
 import unittest
-import solutions.buddy_strings.index as main
+import buddy_strings.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_buddyStrings(self):
         test_patterns = [
             ("ba", "ab", True),
@@ -11,7 +10,7 @@ class Test(unittest.TestCase):
             ("aa", "aa", True),
             ("aaaaaaabc", "aaaaaaacb", True),
             ("", "aa", False),
-            ("abcaa", "abcbb", False)
+            ("abcaa", "abcbb", False),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -20,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.buddyStrings(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

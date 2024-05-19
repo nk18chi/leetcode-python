@@ -1,5 +1,5 @@
 import unittest
-import solutions.remove_duplicates_from_sorted_array.index as main
+import remove_duplicates_from_sorted_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.removeDuplicates(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

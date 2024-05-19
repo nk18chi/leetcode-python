@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_181.index as main
+import _contest.weekly_181.index as main
 
 
 class Test(unittest.TestCase):
@@ -44,7 +44,7 @@ class Test(unittest.TestCase):
             ("level", "l"),
             ("ababab", "abab"),
             ("leetcodeleet", "leet"),
-            ("a", "")
+            ("a", ""),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -53,5 +53,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.longestPrefix(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

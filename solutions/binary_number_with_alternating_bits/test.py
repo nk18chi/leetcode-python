@@ -1,5 +1,5 @@
 import unittest
-import solutions.binary_number_with_alternating_bits.index as main
+import binary_number_with_alternating_bits.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.hasAlternatingBits(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

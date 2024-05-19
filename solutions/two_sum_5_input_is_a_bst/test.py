@@ -1,5 +1,5 @@
 import unittest
-import solutions.two_sum_5_input_is_a_bst.index as main
+import two_sum_5_input_is_a_bst.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findTarget(tree, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

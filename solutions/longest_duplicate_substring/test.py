@@ -1,5 +1,5 @@
 import unittest
-import solutions.longest_duplicate_substring.index as main
+import longest_duplicate_substring.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.longestDupSubstring(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

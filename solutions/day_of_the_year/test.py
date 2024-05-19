@@ -1,5 +1,5 @@
 import unittest
-import solutions.day_of_the_year.index as main
+import day_of_the_year.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.dayOfYear(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

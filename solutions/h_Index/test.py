@@ -1,5 +1,5 @@
 import unittest
-import solutions.h_Index.index as main
+import h_Index.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.hIndex(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

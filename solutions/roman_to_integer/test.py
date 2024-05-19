@@ -3,11 +3,10 @@
 
 import unittest
 
-import solutions.roman_to_integer.index as main
+import roman_to_integer.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_romanToInt(self):
         test_patterns = [
             ("III", 3),
@@ -24,5 +23,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.romanToInt(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

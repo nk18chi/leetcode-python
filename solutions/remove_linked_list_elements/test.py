@@ -1,5 +1,5 @@
 import unittest
-import solutions.remove_linked_list_elements.index as main
+import remove_linked_list_elements.index as main
 
 
 # class Test(unittest.TestCase):

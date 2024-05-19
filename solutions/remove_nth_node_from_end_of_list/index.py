@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/
 
 from typing import Optional
-from solutions._class.list_node import ListNode
+from _class.list_node import ListNode
 
 
 class Solution:

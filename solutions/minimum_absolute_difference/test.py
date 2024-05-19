@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.minimum_absolute_difference.index as main
+import minimum_absolute_difference.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.minimumAbsDifference(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

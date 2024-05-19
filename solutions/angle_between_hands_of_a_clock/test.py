@@ -1,5 +1,5 @@
 import unittest
-import solutions.angle_between_hands_of_a_clock.index as main
+import angle_between_hands_of_a_clock.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.angleClock(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

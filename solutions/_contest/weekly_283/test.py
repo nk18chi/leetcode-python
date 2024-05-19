@@ -1,6 +1,6 @@
 import unittest
-import solutions._contest.weekly_283.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import _contest.weekly_283.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -17,12 +17,49 @@ class Test(unittest.TestCase):
 
     def test_minimalKSum(self):
         test_patterns = [
-            ([96, 44, 99, 25, 61, 84, 88, 18, 19, 33, 60, 86, 52, 19, 32, 47, 35, 50, 94, 17, 29, 98, 22, 21, 72, 100, 40, 84], 35, 794),
+            (
+                [
+                    96,
+                    44,
+                    99,
+                    25,
+                    61,
+                    84,
+                    88,
+                    18,
+                    19,
+                    33,
+                    60,
+                    86,
+                    52,
+                    19,
+                    32,
+                    47,
+                    35,
+                    50,
+                    94,
+                    17,
+                    29,
+                    98,
+                    22,
+                    21,
+                    72,
+                    100,
+                    40,
+                    84,
+                ],
+                35,
+                794,
+            ),
             ([1, 2, 8], 7, 44),
             ([1, 2, 11], 10, 77),
             ([5, 6], 6, 25),
             ([1, 4, 25, 10, 25], 2, 5),
-            ([53, 41, 90, 33, 84, 26, 50, 32, 63, 47, 66, 43, 29, 88, 71, 28, 83], 76, 3444),
+            (
+                [53, 41, 90, 33, 84, 26, 50, 32, 63, 47, 66, 43, 29, 88, 71, 28, 83],
+                76,
+                3444,
+            ),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -53,5 +90,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.replaceNonCoprimes(arg1), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

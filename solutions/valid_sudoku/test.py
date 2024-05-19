@@ -1,5 +1,5 @@
 import unittest
-import solutions.valid_sudoku.index as main
+import valid_sudoku.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,8 +15,9 @@ class Test(unittest.TestCase):
                     ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
                     [".", "6", ".", ".", ".", ".", "2", "8", "."],
                     [".", ".", ".", "4", "1", "9", ".", ".", "5"],
-                    [".", ".", ".", ".", "8", ".", ".", "7", "9"]
-                ], True
+                    [".", ".", ".", ".", "8", ".", ".", "7", "9"],
+                ],
+                True,
             ),
             (
                 [
@@ -29,7 +30,8 @@ class Test(unittest.TestCase):
                     [".", "6", ".", ".", ".", ".", "2", "8", "."],
                     [".", ".", ".", "4", "1", "9", ".", ".", "5"],
                     [".", ".", ".", ".", "8", ".", ".", "7", "9"],
-                ], False
+                ],
+                False,
             ),
         ]
 
@@ -39,5 +41,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isValidSudoku(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

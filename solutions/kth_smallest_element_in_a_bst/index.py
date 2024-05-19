@@ -1,14 +1,13 @@
 # 230. Kth Smallest Element in a BST
 # https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:
     # Time complexity: O(n)
     # Space complexity: O(n)
     def kthSmallest(self, root: TreeNode, k: int) -> int:
-
         self.res: int = 0
         self.isAnswer: bool = False
         self.k = k
@@ -22,5 +21,6 @@ class Solution:
                 self.res = root.val
                 self.isAnswer = True
             dfs(root.right)
+
         dfs(root)
         return self.res

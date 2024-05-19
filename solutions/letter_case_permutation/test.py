@@ -1,13 +1,11 @@
 import unittest
 
-import solutions.letter_case_permutation.index as main
+import letter_case_permutation.index as main
 
 
 class Test(unittest.TestCase):
     def test_letterCasePermutation(self):
-        test_patterns = [
-            ("a1b2", ['a1b2', 'A1b2', 'a1B2', 'A1B2'])
-        ]
+        test_patterns = [("a1b2", ["a1b2", "A1b2", "a1B2", "A1B2"])]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -15,5 +13,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.letterCasePermutation(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

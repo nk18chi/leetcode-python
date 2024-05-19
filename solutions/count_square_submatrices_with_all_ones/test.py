@@ -1,5 +1,5 @@
 import unittest
-import solutions.count_square_submatrices_with_all_ones.index as main
+import count_square_submatrices_with_all_ones.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.countSquares(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

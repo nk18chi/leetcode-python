@@ -1,5 +1,5 @@
 import unittest
-import solutions.subarray_sum_equals_k.index as main
+import subarray_sum_equals_k.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.subarraySum(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -3,11 +3,10 @@
 
 import unittest
 
-import solutions.two_sum.index as main
+import two_sum.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_twoSum(self):
         test_patterns = [
             ([2, 7, 11, 15], 9, [0, 1]),
@@ -19,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.twoSum(arg, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

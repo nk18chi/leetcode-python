@@ -1,5 +1,5 @@
 import unittest
-import solutions.longest_palindromic_substring.index as main
+import longest_palindromic_substring.index as main
 
 
 class Test(unittest.TestCase):
@@ -10,8 +10,6 @@ class Test(unittest.TestCase):
             ("aacabdkacaa", "aca"),
             ("cbbd", "bb"),
             ("bb", "bb"),
-
-
         ]
 
         for i, (arg1, expected) in enumerate(test_patterns):
@@ -20,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.longestPalindrome(arg1), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

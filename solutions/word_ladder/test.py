@@ -1,5 +1,5 @@
 import unittest
-import solutions.word_ladder.index as main
+import word_ladder.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.ladderLength(arg1, arg2, arg3), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

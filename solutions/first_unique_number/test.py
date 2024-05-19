@@ -1,5 +1,5 @@
 import unittest
-import solutions.first_unique_number.index as main
+import first_unique_number.index as main
 
 
 class Test(unittest.TestCase):
@@ -21,5 +21,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(fu.showFirstUnique(), value[6])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

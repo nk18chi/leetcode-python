@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.longest_increasing_subsequence.index as main
+import longest_increasing_subsequence.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.lengthOfLIS(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

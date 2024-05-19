@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.palindrome_number.index as main
+import palindrome_number.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isPalindrome(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

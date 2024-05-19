@@ -1,14 +1,10 @@
 import unittest
-import solutions._contest.weekly_172.index as main
+import _contest.weekly_172.index as main
 
 
 class Test(unittest.TestCase):
     def test_maximum69Number(self):
-        test_patterns = [
-            (9996, 9999),
-            (9669, 9969),
-            (9999, 9999)
-        ]
+        test_patterns = [(9996, 9999), (9669, 9969), (9999, 9999)]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -17,10 +13,10 @@ class Test(unittest.TestCase):
 
     def test_printVertically(self):
         test_patterns = [
-            ("TO BE OR NOT TO BE", [
-                "TBONTB", "OEROOE", "   T"]), ("HOW ARE YOU", [
-                    "HAY", "ORO", "WEU"]), ("CONTEST IS COMING", [
-                        "CIC", "OSO", "N M", "T I", "E N", "S G", "T"])]
+            ("TO BE OR NOT TO BE", ["TBONTB", "OEROOE", "   T"]),
+            ("HOW ARE YOU", ["HAY", "ORO", "WEU"]),
+            ("CONTEST IS COMING", ["CIC", "OSO", "N M", "T I", "E N", "S G", "T"]),
+        ]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -50,5 +46,5 @@ class Test(unittest.TestCase):
     #             self.assertEqual(s.minTaps(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

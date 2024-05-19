@@ -1,5 +1,5 @@
 import unittest
-import solutions.online_stock_span.index as main
+import online_stock_span.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                     self.assertEqual(s.next(arg[j]), expected[j])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

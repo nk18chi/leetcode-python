@@ -1,5 +1,5 @@
 import unittest
-import solutions.missing_number.index as main
+import missing_number.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.missingNumber(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

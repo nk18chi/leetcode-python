@@ -1,11 +1,20 @@
 import unittest
-import solutions.implement_trie.index as main
+import implement_trie.index as main
 
 
 class Test(unittest.TestCase):
     def test_functionName(self):
         test_patterns = [
-            (["apple", ("apple", True), ("app", False), ("app", True), "app", ("app", True)]),
+            (
+                [
+                    "apple",
+                    ("apple", True),
+                    ("app", False),
+                    ("app", True),
+                    "app",
+                    ("app", True),
+                ]
+            ),
         ]
 
         s = main.Solution()
@@ -20,5 +29,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(t.search(arg[5][0]), arg[5][1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

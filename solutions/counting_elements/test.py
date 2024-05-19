@@ -1,5 +1,5 @@
 import unittest
-import solutions.counting_elements.index as main
+import counting_elements.index as main
 
 
 class Test(unittest.TestCase):
@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
             ([1, 1, 3, 3, 5, 5, 7, 7], 0),
             ([1, 3, 2, 3, 5, 0], 3),
             ([1, 1, 2, 2], 2),
-            ([1, 1, 2], 2)
+            ([1, 1, 2], 2),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.countElements(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.backspace_string_compare.index as main
+import backspace_string_compare.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.backspaceCompare(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

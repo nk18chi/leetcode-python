@@ -1,5 +1,5 @@
 import unittest
-import solutions.rotting_oranges.index as main
+import rotting_oranges.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.orangesRotting(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,13 +1,13 @@
 # 430. Flatten a Multilevel Doubly Linked List
 # https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
 
-from solutions._class.node import Node
+from _class.node import Node
 
 
 class Solution:
     # Time complexity: O(n)
     # Space complexity: O(n)
-    def flatten(self, head: 'Node') -> 'Node':
+    def flatten(self, head: "Node") -> "Node":
         res: Node = head
         if head is None:
             return None

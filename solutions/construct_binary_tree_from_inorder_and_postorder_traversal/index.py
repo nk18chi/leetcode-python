@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 
 from typing import List, Dict
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

@@ -1,6 +1,6 @@
 import unittest
-import solutions._contest.weekly_272.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import _contest.weekly_272.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -21,7 +21,7 @@ class Test(unittest.TestCase):
         test_patterns = [
             ("LeetcodeHelpsMeLearn", [8, 13, 15], "Leetcode Helps Me Learn"),
             ("icodeinpython", [1, 5, 7, 9], "i code in py thon"),
-            ("spacing", [0, 1, 2, 3, 4, 5, 6], " s p a c i n g")
+            ("spacing", [0, 1, 2, 3, 4, 5, 6], " s p a c i n g"),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -34,7 +34,7 @@ class Test(unittest.TestCase):
             ([3, 2, 1, 4], 7),
             ([3, 2, 1, 0, 4], 11),
             ([8, 6, 7, 7], 4),
-            ([1], 1)
+            ([1], 1),
         ]
 
         for i, (arg1, expected) in enumerate(test_patterns):
@@ -59,5 +59,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.kIncreasing(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

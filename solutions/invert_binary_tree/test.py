@@ -1,6 +1,6 @@
 import unittest
-import solutions.invert_binary_tree.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode, getTreeNode
+import invert_binary_tree.index as main
+from _class.tree_node import TreeNode, createTreeNode, getTreeNode
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(getTreeNode(s.invertTree(tree)), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

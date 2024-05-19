@@ -1,5 +1,5 @@
 import unittest
-import solutions.second_minimum_node_in_a_binary_tree.index as main
+import second_minimum_node_in_a_binary_tree.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findSecondMinimumValue(tree), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

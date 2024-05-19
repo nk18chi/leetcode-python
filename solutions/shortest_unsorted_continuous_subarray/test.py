@@ -1,5 +1,5 @@
 import unittest
-import solutions.shortest_unsorted_continuous_subarray.index as main
+import shortest_unsorted_continuous_subarray.index as main
 
 
 class Test(unittest.TestCase):
@@ -21,5 +21,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findUnsortedSubarray(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

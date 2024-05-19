@@ -1,5 +1,5 @@
 import unittest
-import solutions.permutation_in_string.index as main
+import permutation_in_string.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.checkInclusion(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

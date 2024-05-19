@@ -1,10 +1,9 @@
 import unittest
 
-import solutions.valid_mountain_array.index as main
+import valid_mountain_array.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_validMountainArray(self):
         test_patterns = [
             ([0, 3, 2, 1], True),
@@ -17,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.validMountainArray(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

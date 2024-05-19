@@ -1,6 +1,6 @@
 import unittest
-import solutions.intersection_of_two_linked_lists.index as main
-from solutions._class.list_node import createListNode, getListNode
+import intersection_of_two_linked_lists.index as main
+from _class.list_node import createListNode, getListNode
 
 
 class Test(unittest.TestCase):
@@ -27,5 +27,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(getListNode(ans), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

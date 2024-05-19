@@ -1,5 +1,5 @@
 import unittest
-import solutions.word_break.index as main
+import word_break.index as main
 
 
 class Test(unittest.TestCase):
@@ -20,5 +20,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.wordBreak(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

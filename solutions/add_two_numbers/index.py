@@ -2,13 +2,15 @@
 # https://leetcode.com/problems/add-two-numbers/
 
 from typing import Optional
-from solutions._class.list_node import ListNode
+from _class.list_node import ListNode
 
 
 class Solution:
     # Time complexity: O(Max(N,M))
     # Space complexity: O(Max(N,M))
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         nodeList: Optional[ListNode] = ListNode(0)
         head = nodeList
         total: int = 0

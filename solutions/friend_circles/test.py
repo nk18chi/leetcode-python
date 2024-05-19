@@ -1,5 +1,5 @@
 import unittest
-import solutions.friend_circles.index as main
+import friend_circles.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findCircleNum(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.dungeon_game.index as main
+import dungeon_game.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.calculateMinimumHP(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

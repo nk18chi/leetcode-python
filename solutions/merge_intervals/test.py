@@ -1,5 +1,5 @@
 import unittest
-import solutions.merge_intervals.index as main
+import merge_intervals.index as main
 
 
 class Test(unittest.TestCase):
@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
             ([[8, 10], [1, 3], [2, 6], [15, 18]], [[1, 6], [8, 10], [15, 18]]),
             ([[1, 3], [4, 5]], [[1, 3], [4, 5]]),
             ([[1, 3]], [[1, 3]]),
-            ([[1, 4], [0, 2], [3, 5]], [[0, 5]])
+            ([[1, 4], [0, 2], [3, 5]], [[0, 5]]),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.merge(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

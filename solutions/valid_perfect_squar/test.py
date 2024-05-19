@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.valid_perfect_squar.index as main
+import valid_perfect_squar.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isPerfectSquare(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

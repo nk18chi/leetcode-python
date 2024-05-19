@@ -1,15 +1,13 @@
 import unittest
-import solutions.group_anagrams.index as main
+import group_anagrams.index as main
 
 
 class Test(unittest.TestCase):
     def test_groupAnagrams(self):
         test_patterns = [
-            (["eat", "tea", "tan", "ate", "nat", "bat"], [
-                ["eat", "tea", "ate"],
-                ["tan", "nat"],
-                ["bat"]
-            ]
+            (
+                ["eat", "tea", "tan", "ate", "nat", "bat"],
+                [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]],
             ),
         ]
 
@@ -19,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.groupAnagrams(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.sqrtx.index as main
+import sqrtx.index as main
 
 
 class Test(unittest.TestCase):
@@ -13,7 +13,7 @@ class Test(unittest.TestCase):
             (16, 4),
             (24, 4),
             (25, 5),
-            (1024, 32)
+            (1024, 32),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -22,5 +22,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.mySqrt(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

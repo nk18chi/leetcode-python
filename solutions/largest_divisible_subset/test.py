@@ -1,5 +1,5 @@
 import unittest
-import solutions.largest_divisible_subset.index as main
+import largest_divisible_subset.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.largestDivisibleSubset(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

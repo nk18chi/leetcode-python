@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/binary-tree-paths/
 
 from typing import List, Optional
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:
@@ -12,7 +12,7 @@ class Solution:
                 return
             if node.left is None and node.right is None:
                 cur.append(str(node.val))
-                self.res.append('->'.join(cur))
+                self.res.append("->".join(cur))
                 cur.pop()
                 return
             cur.append(str(node.val))

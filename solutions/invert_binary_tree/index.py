@@ -1,7 +1,7 @@
 # 226. Invert Binary Tree
 # https://leetcode.com/problems/invert-binary-tree/
 
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

@@ -1,5 +1,5 @@
 import unittest
-import solutions.top_k_frequent_elements.index as main
+import top_k_frequent_elements.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.topKFrequent(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

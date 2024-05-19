@@ -1,5 +1,5 @@
 import unittest
-import solutions.insert_delete_getRandom.index as main
+import insert_delete_getRandom.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(r.insert(arg5[0]), arg5[1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

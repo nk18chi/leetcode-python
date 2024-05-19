@@ -1,9 +1,8 @@
 import unittest
-import solutions._contest.weekly_166.index as main
+import _contest.weekly_166.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_subtractProductAndSum(self):
         test_patterns = [
             (234, 15),
@@ -27,5 +26,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.groupThePeople(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

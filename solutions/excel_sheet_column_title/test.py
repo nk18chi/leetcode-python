@@ -1,9 +1,8 @@
 import unittest
-import solutions.excel_sheet_column_title.index as main
+import excel_sheet_column_title.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_convertToTitle(self):
         test_patterns = [
             (27, "AA"),
@@ -17,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.convertToTitle(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

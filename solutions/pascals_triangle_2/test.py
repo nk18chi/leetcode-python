@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.pascals_triangle_2.index as main
+import pascals_triangle_2.index as main
 
 
 class Test(unittest.TestCase):
@@ -21,5 +21,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.getRow(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

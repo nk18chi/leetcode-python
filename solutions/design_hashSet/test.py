@@ -1,18 +1,12 @@
 import unittest
-import solutions.design_hashSet.index as main
+import design_hashSet.index as main
 
 
 class Test(unittest.TestCase):
     def test_functionName(self):
-        test_patterns = [([[1],
-                           [1, 2],
-                           True,
-                           False,
-                           [1, 2],
-                           True,
-                           [1],
-                           False]),
-                         ]
+        test_patterns = [
+            ([[1], [1, 2], True, False, [1, 2], True, [1], False]),
+        ]
 
         for i, expected in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -31,5 +25,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.contains(2), expected[7])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

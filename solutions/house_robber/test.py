@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.house_robber.index as main
+import house_robber.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.rob(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

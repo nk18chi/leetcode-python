@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.monotonic_array.index as main
+import monotonic_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -20,5 +20,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isMonotonic(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

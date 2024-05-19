@@ -1,5 +1,5 @@
 import unittest
-import solutions.find_minimum_in_rotated_sorted_array.index as main
+import find_minimum_in_rotated_sorted_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findMin(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

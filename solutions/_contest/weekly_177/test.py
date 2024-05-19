@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_177.index as main
+import _contest.weekly_177.index as main
 
 
 class Test(unittest.TestCase):
@@ -19,7 +19,7 @@ class Test(unittest.TestCase):
             (2, [1, 0], [-1, -1], False),
             (4, [1, -1, 3, -1], [2, 3, -1, -1], False),
             (4, [1, -1, 3, -1], [2, -1, -1, -1], True),
-            (6, [1, -1, -1, 4, -1, -1], [2, -1, -1, 5, -1, -1], False)
+            (6, [1, -1, -1, 4, -1, -1], [2, -1, -1, 5, -1, -1], False),
         ]
 
         for i, (arg1, arg2, arg3, expected) in enumerate(test_patterns):
@@ -55,5 +55,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.largestMultipleOfThree(arg1), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

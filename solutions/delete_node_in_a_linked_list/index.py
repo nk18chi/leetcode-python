@@ -1,7 +1,7 @@
 # 237. Delete Node in a Linked List
 # https://leetcode.com/problems/delete-node-in-a-linked-list/
 
-from solutions._class.list_node import ListNode
+from _class.list_node import ListNode
 
 
 class Solution:

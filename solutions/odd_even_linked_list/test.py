@@ -1,6 +1,6 @@
 import unittest
-import solutions.odd_even_linked_list.index as main
-from solutions._class.list_node import ListNode, createListNode, getListNode
+import odd_even_linked_list.index as main
+from _class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

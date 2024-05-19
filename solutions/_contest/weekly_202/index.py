@@ -1,6 +1,6 @@
 from typing import List, Set, Dict, Tuple, Deque
 from collections import deque, defaultdict
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

@@ -1,5 +1,5 @@
 import unittest
-import solutions.single_number3.index as main
+import single_number3.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.singleNumber(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,13 +1,16 @@
 import unittest
 
-import solutions.greatest_common_divisor_of_strings.index as main
+import greatest_common_divisor_of_strings.index as main
 
 
 class Test(unittest.TestCase):
     def test_gcdOfStrings(self):
         test_patterns = [
-            ("TAUXXTAUXXTAUXXTAUXXTAUXX",
-             "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXX"),
+            (
+                "TAUXXTAUXXTAUXXTAUXXTAUXX",
+                "TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX",
+                "TAUXX",
+            ),
             ("ABCABC", "ABC", "ABC"),
             ("ABABAB", "ABAB", "AB"),
             ("LEET", "CODE", ""),
@@ -20,5 +23,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.gcdOfStrings(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

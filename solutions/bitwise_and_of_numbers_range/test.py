@@ -1,5 +1,5 @@
 import unittest
-import solutions.bitwise_and_of_numbers_range.index as main
+import bitwise_and_of_numbers_range.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.rangeBitwiseAnd(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

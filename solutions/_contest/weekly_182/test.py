@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_182.index as main
+import _contest.weekly_182.index as main
 
 
 class Test(unittest.TestCase):
@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
             ([2, 2, 3, 4], 2),
             ([2, 2, 2, 3, 3], -1),
             ([5], -1),
-            ([7, 7, 7, 7, 7, 7, 7], 7)
+            ([7, 7, 7, 7, 7, 7, 7], 7),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -18,11 +18,7 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findLucky(arg), expected)
 
     def test_numTeams(self):
-        test_patterns = [
-            ([2, 5, 3, 4, 1], 3),
-            ([2, 1, 3], 0),
-            ([1, 2, 3, 4], 4)
-        ]
+        test_patterns = [([2, 5, 3, 4, 1], 3), ([2, 1, 3], 0), ([1, 2, 3, 4], 4)]
 
         for i, (arg, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -37,5 +33,5 @@ class Test(unittest.TestCase):
         self.assertEqual(12.0, u.getAverageTime("Leyton", "Waterloo"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

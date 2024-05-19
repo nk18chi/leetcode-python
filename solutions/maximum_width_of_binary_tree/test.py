@@ -1,6 +1,6 @@
 import unittest
-import solutions.maximum_width_of_binary_tree.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import maximum_width_of_binary_tree.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.widthOfBinaryTree(tree), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

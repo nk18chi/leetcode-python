@@ -1,5 +1,5 @@
 import unittest
-import solutions.cheapest_flights_within_k_stops.index as main
+import cheapest_flights_within_k_stops.index as main
 
 
 class Test(unittest.TestCase):
@@ -12,7 +12,9 @@ class Test(unittest.TestCase):
             with self.subTest(test=i):
                 s = main.Solution()
                 # tree: TreeNode = createTreeNode(arg)
-                self.assertEqual(s.findCheapestPrice(arg1, arg2, arg3, arg4, arg5), expected)
+                self.assertEqual(
+                    s.findCheapestPrice(arg1, arg2, arg3, arg4, arg5), expected
+                )
 
         # (test) List Node
         # for i, (arg, expected) in enumerate(test_patterns):
@@ -23,5 +25,5 @@ class Test(unittest.TestCase):
         #         self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

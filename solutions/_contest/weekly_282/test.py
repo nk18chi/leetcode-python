@@ -1,9 +1,8 @@
 import unittest
-import solutions._contest.weekly_282.index as main
+import _contest.weekly_282.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_prefixCount(self):
         test_patterns = [
             (["pay", "attention", "practice", "attend"], "at", 2),
@@ -16,10 +15,7 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.prefixCount(arg1, arg2), expected)
 
     def test_minSteps(self):
-        test_patterns = [
-            ("leetcode", "coats", 7),
-            ("night", "thing", 0)
-        ]
+        test_patterns = [("leetcode", "coats", 7), ("night", "thing", 0)]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -49,5 +45,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.minimumFinishTime(arg1, arg2, arg3), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

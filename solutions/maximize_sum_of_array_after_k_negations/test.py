@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.maximize_sum_of_array_after_k_negations.index as main
+import maximize_sum_of_array_after_k_negations.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,10 +15,8 @@ class Test(unittest.TestCase):
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
                 s = main.Solution()
-                self.assertEqual(
-                    s.largestSumAfterKNegations(
-                        arg1, arg2), expected)
+                self.assertEqual(s.largestSumAfterKNegations(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

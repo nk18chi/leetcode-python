@@ -1,5 +1,5 @@
 import unittest
-import solutions.ransom_note.index as main
+import ransom_note.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.canConstruct(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

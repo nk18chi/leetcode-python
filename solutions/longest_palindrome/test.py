@@ -1,10 +1,9 @@
 import unittest
 
-import solutions.longest_palindrome.index as main
+import longest_palindrome.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_longestPalindrome(self):
         test_patterns = [
             ("abccccdd", 7),
@@ -18,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.longestPalindrome(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

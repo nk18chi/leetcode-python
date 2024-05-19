@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.valid_parentheses.index as main
+import valid_parentheses.index as main
 
 
 class Test(unittest.TestCase):
@@ -23,5 +23,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isValid(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

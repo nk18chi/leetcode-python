@@ -1,5 +1,5 @@
 import unittest
-import solutions.permutation_sequence.index as main
+import permutation_sequence.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.getPermutation(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.maximum_number_of_balloons.index as main
+import maximum_number_of_balloons.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maxNumberOfBalloons(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

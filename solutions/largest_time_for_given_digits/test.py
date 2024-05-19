@@ -1,10 +1,9 @@
 import unittest
 
-import solutions.largest_time_for_given_digits.index as main
+import largest_time_for_given_digits.index as main
 
 
 class Test(unittest.TestCase):
-
     def test_largestTimeFromDigits(self):
         test_patterns = [
             ([2, 0, 6, 6], "06:26"),
@@ -19,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.largestTimeFromDigits(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

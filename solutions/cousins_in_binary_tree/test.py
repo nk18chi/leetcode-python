@@ -1,6 +1,6 @@
 import unittest
-import solutions.cousins_in_binary_tree.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import cousins_in_binary_tree.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isCousins(tree, arg2, arg3), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 from typing import List, Set, Dict, Tuple, Deque
 from collections import deque, defaultdict
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:
@@ -55,8 +55,8 @@ class Solution:
             for j in range(i + 1, n):
                 if arr[j] >= target:
                     flag = True
-                    ans += (j - i)
-                    arr[i + 1:j + 1] = arr[i:j]
+                    ans += j - i
+                    arr[i + 1 : j + 1] = arr[i:j]
                     break
             if not flag:
                 return -1

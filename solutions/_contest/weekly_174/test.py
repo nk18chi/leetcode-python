@@ -1,15 +1,21 @@
 import unittest
-import solutions._contest.weekly_174.index as main
+import _contest.weekly_174.index as main
 
 
 class Test(unittest.TestCase):
     def test_kWeakestRows(self):
         test_patterns = [
-            ([[1, 1, 0, 0, 0],
-              [1, 1, 1, 1, 0],
-                [1, 0, 0, 0, 0],
-                [1, 1, 0, 0, 0],
-                [1, 1, 1, 1, 1]], 3, [2, 0, 3])
+            (
+                [
+                    [1, 1, 0, 0, 0],
+                    [1, 1, 1, 1, 0],
+                    [1, 0, 0, 0, 0],
+                    [1, 1, 0, 0, 0],
+                    [1, 1, 1, 1, 1],
+                ],
+                3,
+                [2, 0, 3],
+            )
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -23,7 +29,7 @@ class Test(unittest.TestCase):
             ([7, 7, 7, 7, 7, 7], 1),
             ([1, 9], 1),
             ([1000, 1000, 3, 7], 1),
-            ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5)
+            ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5),
         ]
 
         for i, (arg1, expected) in enumerate(test_patterns):
@@ -43,5 +49,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maxProduct(tree), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

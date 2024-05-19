@@ -1,12 +1,12 @@
 from typing import List, Set, Dict
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:
     def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:
         arr: List[str] = sentence.split(" ")
         for i, a in enumerate(arr):
-            if a[:len(searchWord)] == searchWord:
+            if a[: len(searchWord)] == searchWord:
                 return i + 1
         return -1
 
@@ -48,11 +48,14 @@ class Solution:
                         break
             if isOdd < 2:
                 self.res += 1
+
         dfs(root, {})
         return self.res
 
     def maxDotProduct(self, nums1: List[int], nums2: List[int]) -> int:
-        dp: List[List[int]] = [[-1001 for _ in range(len(nums2) + 1)] for _ in range(len(nums1) + 1)]
+        dp: List[List[int]] = [
+            [-1001 for _ in range(len(nums2) + 1)] for _ in range(len(nums1) + 1)
+        ]
         for i in range(len(nums1)):
             for j in range(len(nums2)):
                 dp[i + 1][j + 1] = nums1[i] * nums2[j]

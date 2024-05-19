@@ -2,13 +2,13 @@
 # https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/530/week-3/3306/
 
 
-from solutions._class.binary_matrix import BinaryMatrix
+from _class.binary_matrix import BinaryMatrix
 
 
 class Solution:
     # Time complexity: O(n + m)
     # Space complexity: O(1)
-    def leftMostColumnWithOne(self, binaryMatrix: 'BinaryMatrix') -> int:
+    def leftMostColumnWithOne(self, binaryMatrix: "BinaryMatrix") -> int:
         row: int
         col: int
         row, col = binaryMatrix.dimensions()

@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_183.index as main
+import _contest.weekly_183.index as main
 
 
 class Test(unittest.TestCase):
@@ -27,11 +27,7 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.numSteps(arg), expected)
 
     def test_longestDiverseString(self):
-        test_patterns = [
-            (1, 1, 7, "ccaccbcc"),
-            (2, 2, 1, "abbac"),
-            (7, 1, 0, "aabaa")
-        ]
+        test_patterns = [(1, 1, 7, "ccaccbcc"), (2, 2, 1, "abbac"), (7, 1, 0, "aabaa")]
 
         for i, (arg1, arg2, arg3, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
@@ -50,5 +46,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.stoneGameIII(arg1), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

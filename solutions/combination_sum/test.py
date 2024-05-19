@@ -1,5 +1,5 @@
 import unittest
-import solutions.combination_sum.index as main
+import combination_sum.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.combinationSum(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

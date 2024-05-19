@@ -9,7 +9,9 @@ class Solution:
     # Time complexity: O(MN)
     # Space complexity: O(MN)
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
-        res: List[List[int]] = [[-1 for _ in range(len(mat[i]))] for i in range(len(mat))]
+        res: List[List[int]] = [
+            [-1 for _ in range(len(mat[i]))] for i in range(len(mat))
+        ]
         queue: Deque[Tuple[int, int]] = deque([])
         for i in range(len(mat)):
             for j in range(len(mat[i])):

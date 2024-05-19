@@ -1,5 +1,5 @@
 import unittest
-import solutions.product_of_array_except_self.index as main
+import product_of_array_except_self.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.productExceptSelf(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

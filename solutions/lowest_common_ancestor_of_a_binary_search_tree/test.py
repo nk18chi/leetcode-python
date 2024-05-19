@@ -1,5 +1,5 @@
 # import unittest
-# import solutions.lowest_common_ancestor_of_a_binary_search_tree.index as main
+# import lowest_common_ancestor_of_a_binary_search_tree.index as main
 
 
 # class Test(unittest.TestCase):

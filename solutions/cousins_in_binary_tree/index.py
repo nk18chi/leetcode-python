@@ -2,7 +2,7 @@
 # https://leetcode.com/problems/cousins-in-binary-tree/
 
 from typing import List
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

@@ -1,7 +1,7 @@
 # 222. Count Complete Tree Nodes
 # https://leetcode.com/problems/count-complete-tree-nodes/
 
-from solutions._class.tree_node import TreeNode
+from _class.tree_node import TreeNode
 
 
 class Solution:

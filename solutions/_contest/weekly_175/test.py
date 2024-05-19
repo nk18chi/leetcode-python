@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_175.index as main
+import _contest.weekly_175.index as main
 
 
 class Test(unittest.TestCase):
@@ -12,7 +12,7 @@ class Test(unittest.TestCase):
             ([-16, -13, 8], False),
             ([10, 2, 5, 3], True),
             ([7, 1, 14, 11], True),
-            ([3, 1, 7, 11], False)
+            ([3, 1, 7, 11], False),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -25,7 +25,7 @@ class Test(unittest.TestCase):
             ("bab", "aba", 1),
             ("leetcode", "practice", 5),
             ("anagram", "mangaar", 0),
-            ("xxyyzz", "xxyyzz", 0)
+            ("xxyyzz", "xxyyzz", 0),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -50,5 +50,5 @@ class Test(unittest.TestCase):
         # print(t.getTweetCountsPerFrequency("hour", "tweet3", 0, 210))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.path_sum_2.index as main
+import path_sum_2.index as main
 
 
 class Test(unittest.TestCase):
@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.pathSum(tree, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

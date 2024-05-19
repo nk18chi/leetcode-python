@@ -1,7 +1,7 @@
 # 876. Middle of the Linked List
 # https://leetcode.com/problems/middle-of-the-linked-list/
 
-from solutions._class.list_node import ListNode
+from _class.list_node import ListNode
 
 
 class Solution:

@@ -1,5 +1,5 @@
 import unittest
-import solutions.remove_duplicates_from_sorted_list_2.index as main
+import remove_duplicates_from_sorted_list_2.index as main
 
 
 class Test(unittest.TestCase):
@@ -13,8 +13,10 @@ class Test(unittest.TestCase):
             with self.subTest(test=i):
                 s = main.Solution()
                 n = main.createListNode(arg)
-                self.assertEqual(main.getValFromListNode(s.deleteDuplicates(n)), expected)
+                self.assertEqual(
+                    main.getValFromListNode(s.deleteDuplicates(n)), expected
+                )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.maximum_average_subarray.index as main
+import maximum_average_subarray.index as main
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findMaxAverage(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

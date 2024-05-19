@@ -1,5 +1,5 @@
 import unittest
-import solutions.happy_number.index as main
+import happy_number.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.isHappy(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 import unittest
-import solutions.kth_smallest_element_in_a_bst.index as main
-from solutions._class.tree_node import TreeNode, createTreeNode
+import kth_smallest_element_in_a_bst.index as main
+from _class.tree_node import TreeNode, createTreeNode
 
 
 class Test(unittest.TestCase):
@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.kthSmallest(tree, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

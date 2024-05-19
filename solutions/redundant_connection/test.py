@@ -1,5 +1,5 @@
 import unittest
-import solutions.redundant_connection.index as main
+import redundant_connection.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findRedundantConnection(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

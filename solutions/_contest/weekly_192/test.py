@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_192.index as main
+import _contest.weekly_192.index as main
 
 
 class Test(unittest.TestCase):
@@ -26,5 +26,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.getStrongest(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

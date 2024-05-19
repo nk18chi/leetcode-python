@@ -1,5 +1,5 @@
 import unittest
-import solutions._contest.weekly_184.index as main
+import _contest.weekly_184.index as main
 
 
 class Test(unittest.TestCase):
@@ -29,8 +29,11 @@ class Test(unittest.TestCase):
     def test_entityParser(self):
         test_patterns = [
             ("&amp;gt;", "&gt;"),
-            ("&amp; is an HTML entity but &ambassador; is not.", "& is an HTML entity but &ambassador; is not."),
-            ("and I quote: &quot;...&quot;", "and I quote: \"...\""),
+            (
+                "&amp; is an HTML entity but &ambassador; is not.",
+                "& is an HTML entity but &ambassador; is not.",
+            ),
+            ("and I quote: &quot;...&quot;", 'and I quote: "..."'),
         ]
 
         for i, (arg, expected) in enumerate(test_patterns):
@@ -39,5 +42,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.entityParser(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,5 @@
 import unittest
-import solutions.sort_characters_by_frequency.index as main
+import sort_characters_by_frequency.index as main
 
 
 class Test(unittest.TestCase):
@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.frequencySort(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

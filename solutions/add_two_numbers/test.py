@@ -1,13 +1,13 @@
 import unittest
-import solutions.add_two_numbers.index as main
-from solutions._class.list_node import ListNode, createListNode, getListNode
+import add_two_numbers.index as main
+from _class.list_node import ListNode, createListNode, getListNode
 
 
 class Test(unittest.TestCase):
     def test_addTwoNumbers(self):
         test_patterns = [
             ([2, 4, 3], [5, 6, 4], [7, 0, 8]),
-            ([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9], [8, 9, 9, 9, 0, 0, 0, 1])
+            ([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9], [8, 9, 9, 9, 0, 0, 0, 1]),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(ans, expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.longest_harmonious_subsequence.index as main
+import longest_harmonious_subsequence.index as main
 
 
 class Test(unittest.TestCase):
@@ -16,5 +16,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findLHS(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

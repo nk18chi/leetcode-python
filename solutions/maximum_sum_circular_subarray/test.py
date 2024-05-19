@@ -1,5 +1,5 @@
 import unittest
-import solutions.maximum_sum_circular_subarray.index as main
+import maximum_sum_circular_subarray.index as main
 
 
 class Test(unittest.TestCase):
@@ -18,5 +18,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.maxSubarraySumCircular(arg), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

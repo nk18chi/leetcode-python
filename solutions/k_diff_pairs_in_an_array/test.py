@@ -1,6 +1,6 @@
 import unittest
 
-import solutions.k_diff_pairs_in_an_array.index as main
+import k_diff_pairs_in_an_array.index as main
 
 
 class Test(unittest.TestCase):
@@ -9,7 +9,7 @@ class Test(unittest.TestCase):
             ([1, 3, 1, 5, 4], 0, 1),
             ([3, 1, 4, 1, 5], 2, 2),
             ([1, 2, 3, 4, 5], 1, 4),
-            ([1, 3, 1, 5, 4], 0, 1)
+            ([1, 3, 1, 5, 4], 0, 1),
         ]
 
         for i, (arg1, arg2, expected) in enumerate(test_patterns):
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(s.findPairs(arg1, arg2), expected)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
