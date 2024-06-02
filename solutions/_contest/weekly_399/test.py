@@ -1,5 +1,5 @@
 import unittest
-import _contest.weekly_400.index as main
+import _contest.weekly_399.index as main
 
 
 class Test(unittest.TestCase):
