@@ -3,7 +3,7 @@ import _contest.weekly_402.index as main
 
 
 class Test(unittest.TestCase):
-    def test_countCompleteDayPairs(self):
+    def test_countCompleteDayPairs1(self):
         test_patterns = [
             ([72, 48, 24, 3], 3),
             ([13, 11], 1),
@@ -11,7 +11,17 @@ class Test(unittest.TestCase):
         for i, (arg1, expected) in enumerate(test_patterns):
             with self.subTest(test=i):
                 s = main.Solution()
-                self.assertEqual(s.countCompleteDayPairs(arg1), expected)
+                self.assertEqual(s.countCompleteDayPairs1(arg1), expected)
+
+    def test_countCompleteDayPairs2(self):
+        test_patterns = [
+            ([72, 48, 24, 3], 3),
+            ([13, 11], 1),
+        ]
+        for i, (arg1, expected) in enumerate(test_patterns):
+            with self.subTest(test=i):
+                s = main.Solution()
+                self.assertEqual(s.countCompleteDayPairs2(arg1), expected)
 
     def test_maximumTotalDamage(self):
         test_patterns = [
