@@ -18,4 +18,4 @@ tomli==2.0.1
 typed_ast==1.5.5
 typing_extensions==4.11.0
 virtualenv==20.26.2
-zipp==3.18.2
+zipp==3.19.1
